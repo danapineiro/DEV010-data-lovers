@@ -12,7 +12,7 @@
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 * [9. Checklist](#9-checklist)
 
-***
+****
 
 ## 1. Preámbulo
 
