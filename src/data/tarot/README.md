@@ -11,7 +11,11 @@ baraja de tarot está compuesta por 78 cartas divididas en arcanos mayores, los
 cuales son 22; y menores, que son 56. La palabra _arcano_ proviene del latín
 _arcanum_, que significa 'misterio' o 'secreto'.
 
+<<<<<<< HEAD
+A quienes practican este tipo de adivinación se llaman “tarotistas”...
+=======
 A quienes practican este tipo de adivinación se llaman “tarotistas”....
+>>>>>>> 10a5494abd514068e6a6baeea9b220c42cf6e008
 
 ## Hallazgos
 
@@ -39,7 +43,7 @@ lo económico).
 
 * En este _dataset_ encontrarás los siguientes datos de cada carta:
 
-  - Tipo: Si es arcano mayor o menor.
+  - Tipo: Si es arcano mayor o menor....
   - Nombre: El nombre de cada una.
   - Nombre corto: Un código identificador de cada una.
   - Valor: Su valor numérico asociado.
