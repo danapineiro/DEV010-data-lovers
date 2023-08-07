@@ -39,7 +39,7 @@ lo económico).
 
 * En este _dataset_ encontrarás los siguientes datos de cada carta:
 
-  - Tipo: Si es arcano mayor o menor.
+  - Tipo: Si es arcano mayor o menor....
   - Nombre: El nombre de cada una.
   - Nombre corto: Un código identificador de cada una.
   - Valor: Su valor numérico asociado.
