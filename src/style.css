@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-cartas-tarot-dibujadas-mano_79603-2056.jpg?w=996&t=st=1691512811~exp=1691513411~hmac=710a3d350c317c13c58b9b84e8c5e2af9d4c19a89636a7cba57fa20c5eb46e49);
+    background-repeat: no-repeat;
+    background-size: 1520px 640px;
+    
+    
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute; 
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+    color:black
+    
+}
+
+h1 {
+    font-size: 400%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
+    color:#C1554D;
+   
+    
+}
+
+button {
+    display: block;
+    background-color:#C1554D;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border:20px;
+    border-radius: 20px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+}
