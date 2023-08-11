@@ -1,3 +1,14 @@
+
+.card:hover { 
+  background-color: rgb(238, 214, 118);
+	cursor: pointer;
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+	-ms-filter: grayscale(50%);
+	-o-filter: grayscale(50%);
+  display: flex-wrap;
+}
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
     background-repeat: no-repeat;
