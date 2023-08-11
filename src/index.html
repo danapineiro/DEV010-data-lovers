@@ -11,8 +11,6 @@
     </header>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-    <div id="cards">
-    </div>
      <section class="box">
       <input type="text" name="search" placerholder="Buscar" class="src" autocomplete="off">
       <div class="icone lupa"></div>
@@ -21,8 +19,8 @@
       <button id="btn" onclick="allCards">Todas las cartas</button>
       <label for="Arcanos"> Arcanos</label>
       <select name="Nombre de arcanos" id="Arcanos">
-      <option value="mayores">Mayores</option>
-      <option value="mayores">Menores</option>
+      <option value="major">Mayores</option>
+      <option value="minor">Menores</option>
       </select>
       <label for="Tipos de cartas">Tipos</label>
       <select name="Tipos de cartas" id="Tipos">
@@ -32,6 +30,8 @@
       <option value="espadas">Espadas</option>
       </select>
     </section>
+    <div id="cards">
+    </div>
   </body>
   <footer >Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</footer>
 </html>
