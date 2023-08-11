@@ -1,6 +1,6 @@
 # Tarot
 
-El tarot es una baraja de naipes a menudo utilizada como medio de consulta e
+.El tarot es una baraja de naipes a menudo utilizada como medio de consulta e
 interpretación de hechos (presentes, pasados o futuros), sueños, percepciones o
 estados emocionales que constituye, además, un tipo de cartomancia.
 
