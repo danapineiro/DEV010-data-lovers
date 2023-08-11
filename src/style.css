@@ -11,19 +11,19 @@
 }
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-size: 1550px 650px;
     
 }
 
 footer {
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);
     position: absolute; 
     bottom: 0;
     width: 99%;
     height: 40px;
-    color:#89728C;
+    color:#89728C;*/
     
 }
 
@@ -33,12 +33,17 @@ h1 {
     font-family: 'Lobster';
     text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
     color:#89728C;
-   
-    
+
 }
 
-/*.container {
-    
+#btn {
+    justify-content: flex-end;
+}
+#Arcanos {
+    justify-content: flex-end;
+}
+#Tipos {
+    justify-content: flex-end;
 }
 
 /*#Arcanos {
