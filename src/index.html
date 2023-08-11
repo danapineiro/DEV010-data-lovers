@@ -5,26 +5,20 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <h1>Welcome to Mystical Tarot</h1>
-  </header>
   <body>
+    <header>
+      <h1>Welcome to Mystical Tarot</h1>
+    </header>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
     <div id="cards">
     </div>
-      <div id="root"></div>
-      <script src="main.js" type="module"></script>
-     </div>
-     <br>
-     <br>
-     <br>
      <section class="box">
       <input type="text" name="search" placerholder="Buscar" class="src" autocomplete="off">
       <div class="icone lupa"></div>
      </section>
-     <section class="container">
-      <button id="btn">Todas las cartas</button>
+     <section class="container" style="text-align: center">
+      <button id="btn" onclick="allCards">Todas las cartas</button>
       <label for="Arcanos"> Arcanos</label>
       <select name="Nombre de arcanos" id="Arcanos">
       <option value="mayores">Mayores</option>
@@ -38,9 +32,6 @@
       <option value="espadas">Espadas</option>
       </select>
     </section>
-    <br>
   </body>
-  <footer class:"Pie">
-    <p>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</p>
-    </footer>
+  <footer >Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</footer>
 </html>
