@@ -9,10 +9,34 @@
     <h1>Welcome to Mystical Tarot</h1>
   </header>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-    <button onclick="Entrar">Go</button>
+      <div id="root"></div>
+      <script src="main.js" type="module"></script>
+     </div>
+     <br>
+     <br>
+     <br>
+     <section class="box">
+      <input type="text" name="search" placerholder="Buscar" class="src" autocomplete="off">
+      <div class="icone lupa"></div>
+     </section>
+     <section class="container">
+      <button id="btn">Todas las cartas</button>
+      <label for="Arcanos"> Arcanos</label>
+      <select name="Nombre de arcanos" id="Arcanos">
+      <option value="mayores">Mayores</option>
+      <option value="mayores">Menores</option>
+      </select>
+      <label for="Tipos de cartas">Tipos</label>
+      <select name="Tipos de cartas" id="Tipos">
+      <option value="oros">Oros</option>
+      <option value="bastos">Bastos</option>
+      <option value="copas">Copas</option>
+      <option value="espadas">Espadas</option>
+      </select>
+    </section>
+    <br>
   </body>
+  
   <footer class:"Pie">
     <p>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</p>
     </footer>

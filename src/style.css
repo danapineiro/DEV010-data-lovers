@@ -1,8 +1,7 @@
 body {
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-cartas-tarot-dibujadas-mano_79603-2056.jpg?w=996&t=st=1691512811~exp=1691513411~hmac=710a3d350c317c13c58b9b84e8c5e2af9d4c19a89636a7cba57fa20c5eb46e49);
+    background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
     background-repeat: no-repeat;
-    background-size: 1520px 640px;
-    
+    background-size: 1550px 650px;
     
 }
 
@@ -13,23 +12,86 @@ footer {
     bottom: 0;
     width: 99%;
     height: 40px;
-    color:black
+    color:#89728C;
     
 }
 
 h1 {
-    font-size: 400%;
-    text-align: center;
-    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    text-align:left;
+    font-family: 'Lobster';
     text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
-    color:#C1554D;
+    color:#89728C;
    
     
 }
 
-button {
+/*.container {
+    
+}
+
+/*#Arcanos {
     display: block;
-    background-color:#C1554D;
+    background-color:#BF80A3;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border:20px;
+    border-radius: 30px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px;
+}
+  #Tipos {
+    display: block;
+    background-color:#D5E5F2;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border: 1px solid silver;
+    border-radius: 30px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center; 
+    align-items: center; 
+    gap: 8px;
+}
+
+/*#boton-tipos {
+    display: block;
+    background-color:#BF80B5;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border: 1px solid silver;
+    border-radius: 30px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center; 
+    align-items: center; 
+    gap: 8px;
+}*/
+
+/*button:active {
+    display: block;
+    background-color:#89728C;
     font-size:10px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
@@ -45,4 +107,4 @@ button {
     justify-content: center; 
     align-items: center; 
     gap: 8px; 
-}
+}*/
