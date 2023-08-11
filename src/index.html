@@ -6,34 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Mystical Tarot</h1>
-    </header>
-      <div id="root"></div>
-      <script src="main.js" type="module"></script>
-      <div id="cards">
-      </div>
-      <section class="box">
-        <input type="text" name="search" placeholder="Buscar" class="src" autocomplete="off">
-        <div class="icone lupa"></div>
-    </section>
+  <header>
+    <h1>Welcome to Mystical Tarot</h1>
+  </header>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+    <div id="cards">
+    </div>
+     <section class="box">
+      <input type="text" name="search" placerholder="Buscar" class="src" autocomplete="off">
+      <div class="icone lupa"></div>
+     </section>
 
-    <section class="container">
-        <button id="btn">Todas las cartas</button>
-        <label for="Arcanos">Arcanos</label>
-        <select name="Nombre de arcanos" id="Arcanos">
-            <option value="mayores">Mayores</option>
-            <option value="mayores">Menores</option>
-        </select>
-        <label for="Tipos de cartas">Tipos</label>
-        <select name="Tipos de cartas" id="Tipos">
-            <option value="oros">Oros</option>
-            <option value="bastos">Bastos</option>
-            <option value="copas">Copas</option>
-            <option value="espadas">Espadas</option>
-        </select>
-    </section>
+     <section class="container" style="text-align: center">
+      <button id="btn" onclick="allCards">Todas las cartas</button>
 
+      <label for="Arcanos"> Arcanos</label>
+      <select name="Nombre de arcanos" id="Arcanos">
+      <option value="mayores">Mayores</option>
+      <option value="mayores">Menores</option>
+      </select>
+      <label for="Tipos de cartas">Tipos</label>
+      <select name="Tipos de cartas" id="Tipos">
+      <option value="oros">Oros</option>
+      <option value="bastos">Bastos</option>
+      <option value="copas">Copas</option>
+      <option value="espadas">Espadas</option>
+      </select>
+    </section>
   </body>
-    <footer class="Pie">Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</footer>
+  <footer class:"Pie">Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel</footer>
 </html>

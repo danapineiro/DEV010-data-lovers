@@ -9,7 +9,7 @@ for (let i = 0; i < tarot.cards.length; i ++){
   const containerButtons = document.createElement("div");
 
   const img = document.createElement("img");
-
+  
   const buttonLeft = document.createElement("button");
 
   buttonLeft.innerText = "Izquierdo";
@@ -18,7 +18,7 @@ for (let i = 0; i < tarot.cards.length; i ++){
 
   img.style.borderRadius = "15px";
 
-  containerCarta.style.margin = "10px";
+  containerCarta.style.margin = "25px";
 
   buttonRight.innerText = "Derecho";
 

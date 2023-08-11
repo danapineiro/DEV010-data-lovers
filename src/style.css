@@ -1,6 +1,6 @@
 
 .card:hover { 
-  background-color: rgb(238, 214, 118);
+  background-color: #ffffff;
 	cursor: pointer;
 	filter: grayscale(50%);
 	-webkit-filter: grayscale(50%);
@@ -11,7 +11,7 @@
 }
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
-    background-repeat:repeat;
+    background-repeat: no-repeat;
     background-size: 1550px 650px;
     
 }
@@ -38,12 +38,26 @@ h1 {
 
 #btn {
     justify-content: flex-end;
+    margin-right: 0;
+    margin-left: auto;
 }
+    
 #Arcanos {
     justify-content: flex-end;
 }
 #Tipos {
     justify-content: flex-end;
+}
+.cards {
+display: grid;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-gap: 10px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 40px;
+margin: 20px 40px 20px 40px;
+}
+/*.container {
+    
 }
 
 /*#Arcanos {
