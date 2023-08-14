@@ -1,33 +1,36 @@
-
-.card:hover { 
-	cursor: pointer;
-	filter: grayscale(50%);
-	-webkit-filter: grayscale(50%);
-	-moz-filter: grayscale(50%);
-	-ms-filter: grayscale(50%);
-	-o-filter: grayscale(50%);
-  display: flex-wrap;
+.card:hover {
+    cursor: pointer;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    display: flex-wrap;
 
 }
+
 .card {
-    border:7px;
+    border: 7px;
     border-radius: 7%;
-    border-style:double;
+    border-style: double;
     color: #BF80A3;
 
-	opacity: 1;
+    opacity: 1;
 
 }
+
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
     background-repeat: repeat;
     background-size: 1550px 650px;
-    
+
 }
+
 #principalDiv {
     max-width: 800px;
-    
+
 }
+
 #cards {
     display: flex;
     justify-content: center;
@@ -40,17 +43,17 @@ footer {
     bottom: 0;
     width: 99%;
     height: 40px;
-    color:#89728C;
+    color: #89728C;
     margin-bottom: auto;
-    
+
 }
 
 h1 {
     font-size: 200%;
-    text-align:left;
+    text-align: left;
     font-family: 'Lobster';
     text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
-    color:#BF80A3;
+    color: #BF80A3;
 
 }
 
@@ -67,41 +70,45 @@ h1 {
     margin-bottom: 20px;
 
 }
+
 #btnAllCards:hover {
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
-    
+
 #Arcanos {
     justify-content: flex-end;
 }
+
 #Tipos {
     justify-content: flex-end;
 }
+
 .cards {
-grid-template-rows: 1fr 1fr 1fr 1fr;
-grid-gap: 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 40px;
-margin: 20px 40px 20px 40px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 20px 40px 20px 40px;
 }
 
 .container {
     font-size: large;
     text-align: center;
     justify-content: flex-end;
+}
 
 .imgClass {
     border-radius: 15px;
     max-height: 250px;
     width: auto;
 }
+
 .card {
     display: inline-block;
-    opacity: 0.7;
 }
+
 /*.container {
-    
-}
+  */  
 #btninput {
     font-size: 15px;
     background-color: #C9D6E9;
@@ -114,12 +121,12 @@ margin: 20px 40px 20px 40px;
 }
 
 
-#selectArcanos {
-   background-color: #EFD5F2;
-   font-size: 25px;
-   border-radius: 15px;
-   border-color:#89728C;
-}
+    #selectArcanos {
+    background-color: #EFD5F2;
+    font-size: 25px;
+    border-radius: 15px;
+    border-color:#89728C;
+    }
     
 #selectTipos {
     background-color:#D5E5F2;
