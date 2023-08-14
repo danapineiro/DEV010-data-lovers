@@ -1,19 +1,21 @@
 
 .card:hover { 
-  background-color: #ffffff;
 	cursor: pointer;
-	filter: grayscale(50%);
-	-webkit-filter: grayscale(50%);
-	-moz-filter: grayscale(50%);
-	-ms-filter: grayscale(50%);
-	-o-filter: grayscale(50%);
-  display: flex-wrap;
+	opacity: 1;
 }
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
     background-repeat: repeat;
     background-size: 1550px 650px;
     
+}
+#principalDiv {
+    max-width: 800px;
+    
+}
+#cards {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -49,12 +51,20 @@ h1 {
     justify-content: flex-end;
 }
 .cards {
-display: grid;
 grid-template-rows: 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 40px;
 margin: 20px 40px 20px 40px;
+}
+.imgClass {
+    border-radius: 15px;
+    max-height: 250px;
+    width: auto;
+}
+.card {
+    display: inline-block;
+    opacity: 0.7;
 }
 /*.container {
     
