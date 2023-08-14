@@ -62,12 +62,6 @@ function showCards(cards) { //showcards recibe un array de cartas
   document.getElementById("cards").appendChild(principalDiv);
 }
 
-function removeChildren(component) {
-  while (component.firstChild) {
-    component.removeChild(component.firstChild);
-  }
-
-}
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("btnInput");
 const showErrors = document.getElementById("showErrors");
@@ -79,3 +73,4 @@ searchButton.addEventListener("click", () => {
   }
   showCards(searchResults);
 });
+
