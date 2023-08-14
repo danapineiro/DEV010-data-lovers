@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-<meta charset="utf-8">
-<title>Data Lovers</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
   <header>
     <h1>Welcome to Mystical Tarot</h1>
   </header>
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-  <section class="box">
-    <input type="text" name="search" placerholder="Buscar" class="src" autocomplete="off">
-    <div class="icone lupa"></div>
-  </section>
-  <section class="container" style="text-align: center">
-    <button id="btnAllCards">Todas las cartas</button>
-    <label for="Arcanos"> Arcanos</label>
-    <select name="Nombre de arcanos" id="selectArcanos">
-      <option>Selecciona una opcion</option>
-      <option value="major">Arcanos mayores</option>
-      <option value="minor">Arcanos menores</option>
-    </select>
-    <label for="Tipos de cartas">Tipos</label>
-    <select name="Tipos de cartas" id="selectTipos">
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+     <section class="box">
+      <input type="text" size="40" name="search" placerholder="Buscar" class="src" autocomplete="off">
+      <button id="btninput">Buscar</button>
+     </section>
+
+     <section class="container">
+      <button id="btnAllCards">Todas las cartas</button>
+
+      <label for="Arcanos"> Arcanos</label>
+      <select name="Nombre de arcanos" id="selectArcanos">
+      <option value="major">Mayores</option>
+      <option value="minor">Menores</option>
+      </select>
+      <label for="Tipos de cartas">Tipos</label>
+      <select name="Tipos de cartas" id="selectTipos">
       <option>Selecciona una opcion</option>
       <option value="pentacles">Oros</option>
       <option value="wands">Bastos</option>
@@ -36,5 +37,4 @@
   </div>
 </body>
 <footer>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel.</footer>
-
 </html>

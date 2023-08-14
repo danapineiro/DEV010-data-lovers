@@ -1,7 +1,22 @@
 
 .card:hover { 
 	cursor: pointer;
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+	-ms-filter: grayscale(50%);
+	-o-filter: grayscale(50%);
+  display: flex-wrap;
+
+}
+.card {
+    border:7px;
+    border-radius: 7%;
+    border-style:double;
+    color: #BF80A3;
+
 	opacity: 1;
+
 }
 body {
     background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
@@ -20,12 +35,13 @@ body {
 
 footer {
     text-align: center;
-    /*background-color: rgb(255, 255, 255);
-    position: absolute; 
+    margin-left: auto;
+    margin-right: auto;
     bottom: 0;
     width: 99%;
     height: 40px;
-    color:#89728C;*/
+    color:#89728C;
+    margin-bottom: auto;
     
 }
 
@@ -34,14 +50,25 @@ h1 {
     text-align:left;
     font-family: 'Lobster';
     text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
-    color:#89728C;
-   
-    
+    color:#BF80A3;
+
 }
-#btn {
+
+#btnAllCards {
+    font-size: 25px;
+    background-color: #C9D6E9;
     justify-content: flex-end;
     margin-right: 0;
     margin-left: auto;
+    border-color: #89728C;
+    border-radius: 12px;
+    margin-right: 50px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+
+}
+#btnAllCards:hover {
+    background-color:#ffffff;
 }
     
 #Arcanos {
@@ -57,6 +84,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 40px;
 margin: 20px 40px 20px 40px;
 }
+
+.container {
+    font-size: large;
+    text-align: center;
+    justify-content: flex-end;
+
 .imgClass {
     border-radius: 15px;
     max-height: 250px;
@@ -69,44 +102,31 @@ margin: 20px 40px 20px 40px;
 /*.container {
     
 }
-
-/*#Arcanos {
-    display: block;
-    background-color:#BF80A3;
-    font-size:10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size: medium;
-    color:white;
-    border:20px;
-    border-radius: 30px;
-    width:150px;
-    height:50px;
-    cursor: hand;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; 
-    align-items: center; 
-    gap: 8px;
+#btninput {
+    font-size: 15px;
+    background-color: #C9D6E9;
+    border-color: #89728C;
+    border-radius: 15px;
+    margin-left: 5px;
 }
-  #Tipos {
-    display: block;
+#btninput:hover {
+    background-color: #ffffff;
+}
+
+
+#selectArcanos {
+   background-color: #EFD5F2;
+   font-size: 25px;
+   border-radius: 15px;
+   border-color:#89728C;
+}
+    
+#selectTipos {
     background-color:#D5E5F2;
-    font-size:10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size: medium;
-    color:white;
-    border: 1px solid silver;
-    border-radius: 30px;
-    width:150px;
-    height:50px;
-    cursor: hand;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content:center; 
-    align-items: center; 
-    gap: 8px;
+    font-size: 25px;
+    border-radius: 15px;
+    border-color: #89728C;
+    
 }
 
 /*#boton-tipos {
