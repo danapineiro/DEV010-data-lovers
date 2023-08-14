@@ -28,7 +28,11 @@ const btnAllCards = document.getElementById("btnAllCards");
 btnAllCards.addEventListener("click", () => {
   showCards(tarot.cards); //tarot es el objeto declarado en el archivo tarot.json y cards es la llave que nos regresa el array.
 })
-
+function removeChildren(component) {
+  while (component.firstChild) {
+    component.removeChild(component.firstChild);
+  }
+}
 function showCards(cards) { //showcards recibe un array de cartas 
   removeChildren(principalDiv);
   // for que muestra las cartas del tarot en la pantalla
