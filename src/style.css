@@ -15,7 +15,7 @@
     border-style:double;
     color: #BF80A3;
 
-	opacity: 1;
+    opacity: 1;
 
 }
 body {
@@ -30,7 +30,13 @@ body {
 }
 #cards {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 2% 2% 2% 2%;
+
 }
 
 footer {
@@ -58,13 +64,12 @@ h1 {
     font-size: 25px;
     background-color: #C9D6E9;
     justify-content: flex-end;
-    margin-right: 0;
-    margin-left: auto;
+    margin-right:3%;
+    margin-left: 20%;
     border-color: #89728C;
     border-radius: 12px;
-    margin-right: 50px;
-    margin-top: -50px;
     margin-bottom: 20px;
+
 
 }
 #btnAllCards:hover {
@@ -77,18 +82,12 @@ h1 {
 #Tipos {
     justify-content: flex-end;
 }
-.cards {
-grid-template-rows: 1fr 1fr 1fr 1fr;
-grid-gap: 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 40px;
-margin: 20px 40px 20px 40px;
-}
 
 .container {
     font-size: large;
     text-align: center;
     justify-content: flex-end;
+}  
 
 .imgClass {
     border-radius: 15px;
@@ -97,11 +96,11 @@ margin: 20px 40px 20px 40px;
 }
 .card {
     display: inline-block;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 /*.container {
     
-}
+}*/
 #btninput {
     font-size: 15px;
     background-color: #C9D6E9;
@@ -115,18 +114,23 @@ margin: 20px 40px 20px 40px;
 
 
 #selectArcanos {
-   background-color: #EFD5F2;
+   background-color: #D5E5F2;
    font-size: 25px;
    border-radius: 15px;
    border-color:#89728C;
 }
     
 #selectTipos {
-    background-color:#D5E5F2;
+    background-color:#d5a3be;
     font-size: 25px;
     border-radius: 15px;
     border-color: #89728C;
     
+}
+
+.clase {
+    font-size: 150%;
+    font-family:fantasy;
 }
 
 /*#boton-tipos {

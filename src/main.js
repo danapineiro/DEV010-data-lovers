@@ -1,4 +1,4 @@
-import tarot from './data/tarot/tarot.json' assert {type: 'json'};
+import tarot from './data/tarot/tarot.js';
 
 const principalDiv = document.createElement("div");
 
@@ -64,6 +64,5 @@ function showCards(cards) { //showcards recibe un array de cartas
 
 function removeChildren(component){
   while(component.firstChild){
-    component.removeChild(component.firstChild);
-}
+    component.removeChild(component.firstChild);}
 }
