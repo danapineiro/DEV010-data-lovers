@@ -94,6 +94,8 @@ h1 {
     text-align: center;
     justify-content: flex-end;
 
+}
+
 
 .imgClass {
     border-radius: 15px;
@@ -143,43 +145,3 @@ h1 {
     font-size: 150%;
     font-family:fantasy;
 }
-
-/*#boton-tipos {
-    display: block;
-    background-color:#BF80B5;
-    font-size:10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size: medium;
-    color:white;
-    border: 1px solid silver;
-    border-radius: 30px;
-    width:150px;
-    height:50px;
-    cursor: hand;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content:center; 
-    align-items: center; 
-    gap: 8px;
-}*/
-
-/*button:active {
-    display: block;
-    background-color:#89728C;
-    font-size:10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-    font-size: medium;
-    color:white;
-    border:20px;
-    border-radius: 20px;
-    width:150px;
-    height:50px;
-    cursor: hand;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; 
-    align-items: center; 
-    gap: 8px; 
-}*/
