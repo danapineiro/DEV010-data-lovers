@@ -41,7 +41,7 @@ function showCards(cards) { //showcards recibe un array de cartas
     buttonLeft.innerText = "Izquierdo";
     const buttonRight = document.createElement("button");
     buttonRight.innerText = "Derecho";
-    
+
     img.classList.add("imgClass");
 
     img.src = cards[i].img;
@@ -62,7 +62,15 @@ function showCards(cards) { //showcards recibe un array de cartas
   document.getElementById("cards").appendChild(principalDiv);
 }
 
-function removeChildren(component){
-  while(component.firstChild){
-    component.removeChild(component.firstChild);}
-}
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("btnInput");
+const showErrors = document.getElementById("showErrors");
+searchButton.addEventListener("click", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase() === searchTerm);
+  if (searchResults.length === 0){
+    showErrors.innerHTML = 'No se encontraron resultados para: ' + searchTerm + ".";
+  }
+  showCards(searchResults);
+});
+
