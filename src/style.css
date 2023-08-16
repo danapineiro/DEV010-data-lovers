@@ -1,39 +1,33 @@
 .card:hover {
     cursor: pointer;
-    filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    display: flex-wrap;
-
+    background: linear-gradient(90.21deg, #FDCEDF -5.91%, #efa5c0 111.58%);
 }
 
-.card {
-    border: 7px;
-    border-radius: 7%;
-    border-style: double;
-    color: #BF80A3;
+.card:hover img {
+    opacity: .1;
+}
 
+.card:hover div.cardDetails {
     opacity: 1;
-
+    color: #59485c;
 }
 
 body {
-    background-image: url(https://i.ibb.co/Vwbzysk/image-2.jpg);
-    background-repeat: repeat;
+
+    background: linear-gradient(90.21deg, #FFBDF7 -5.91%, #b4aae2 111.58%);
     background-size: 1550px 650px;
 
 }
 
 #principalDiv {
     max-width: 800px;
-
+    background-color: #C9A7EB;
+    
 }
 
 #cards {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -67,7 +61,7 @@ h1 {
     font-size: 25px;
     background-color: #C9D6E9;
     justify-content: flex-end;
-    margin-right:3%;
+    margin-right: 3%;
     margin-left: 20%;
     border-color: #89728C;
     border-radius: 12px;
@@ -106,43 +100,163 @@ h1 {
 
 .card {
     display: inline-block;
-
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 7%;
+    margin: 1em;
+    border-style: double;
+    border: 7%;
+    color: #BF80A3;
 }
 
-/*.container {
-
+.card-container {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
     
-}*/
+}
 
-#btninput {
+#btnInput {
     font-size: 15px;
     background-color: #C9D6E9;
     border-color: #89728C;
     border-radius: 15px;
     margin-left: 5px;
 }
-#btninput:hover {
+
+#btnInput:hover {
     background-color: #ffffff;
 }
 
 
 #selectArcanos {
-   background-color: #D5E5F2;
-   font-size: 25px;
-   border-radius: 15px;
-   border-color:#89728C;
-}
-
-    
-#selectTipos {
-    background-color:#d5a3be;
+    background-color: #D5E5F2;
     font-size: 25px;
     border-radius: 15px;
     border-color: #89728C;
-    
+}
+
+
+#selectTipos {
+    background-color: #d5a3be;
+    font-size: 25px;
+    border-radius: 15px;
+    border-color: #89728C;
+
 }
 
 .clase {
     font-size: 150%;
-    font-family:fantasy;
+    font-family: fantasy;
+}
+
+/*#boton-tipos {
+    display: block;
+    background-color:#BF80B5;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border: 1px solid silver;
+    border-radius: 30px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center; 
+    align-items: center; 
+    gap: 8px;
+}*/
+
+/*button:active {
+    display: block;
+    background-color:#89728C;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+    border:20px;
+    border-radius: 20px;
+    width:150px;
+    height:50px;
+    cursor: hand;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+}*/
+.cardDetails {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+    width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+    background: linear-gradient(90.21deg, #BA90C6 -5.91%, #C0DBEA 111.58%);
+    color: rgb(68, 65, 67);
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
