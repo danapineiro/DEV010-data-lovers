@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <meta charset="utf-8">
 <title>Data Lovers</title>
 <link rel="stylesheet" href="style.css" />
@@ -13,23 +12,22 @@
   <div id="root"></div>
   <script src="main.js" type="module"></script>
   <section class="box">
-    <input type="text" id="searchInput" size="40" name="search" placerholder="Buscar" class="src" autocomplete="off">
-    <button id="btnInput">Buscar</button>
+    <input type="text" id="searchInput" size="40" name="search" placeholder="Buscar carta" class="src" autocomplete="off">
     <div id="searchResults"></div>
   </section>
 
   <section class="container">
     <button id="btnAllCards">Todas las cartas</button>
 
-      <label class="clase" for="Arcanos"> Arcanos </label>
-      <select name="Nombre de arcanos" id="selectArcanos">
-      <option>Selecciona una opcion</option>
+    <label class="clase" for="Arcanos"> Arcanos </label>
+    <select name="Nombre de arcanos" id="selectArcanos">
+      <option>Selecciona una arcano</option>
       <option value="major">Mayores</option>
       <option value="minor">Menores</option>
-      </select>
-      <label class="clase" for="Tipos de cartas">Tipos </label>
-      <select name="Tipos de cartas" id="selectTipos">
-      <option>Selecciona una opcion</option>
+    </select>
+    <label class="clase" for="Tipos de cartas">Tipos </label>
+    <select name="Tipos de cartas" id="selectTipos">
+      <option>Selecciona tipo</option>
       <option value="pentacles">Oros</option>
       <option value="wands">Bastos</option>
       <option value="cups">Copas</option>
@@ -37,7 +35,18 @@
     </select>
   </section>
   <div id="cards">
-  <p id="showErrors"></p>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="cardMeaning"></p>
+      </div>
+
+    </div>
+    <p id="showErrors"></p>
+  </div>
   </div>
 </body>
 <footer>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel.</footer>
