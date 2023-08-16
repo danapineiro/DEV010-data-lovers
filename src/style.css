@@ -3,8 +3,13 @@
     background: linear-gradient(90.21deg, #FDCEDF -5.91%, #efa5c0 111.58%);
 }
 
-.card:hover img {
-    opacity: .1;
+
+.card {
+    border: 7px;
+    border-radius: 7%;
+    border-style: double;
+    color: #BF80A3;
+    display: inline-block;
 }
 
 .card:hover div.cardDetails {
@@ -98,20 +103,6 @@ h1 {
     width: auto;
 }
 
-.card {
-    display: inline-block;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 24px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 7%;
-    margin: 1em;
-    border-style: double;
-    border: 7%;
-    color: #BF80A3;
-}
 
 .card-container {
     align-items: center;

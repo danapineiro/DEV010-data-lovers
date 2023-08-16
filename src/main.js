@@ -114,3 +114,4 @@ searchInput.addEventListener("keyup", (e) => {
 span.onclick = function() {
   modal.style.display = "none";
 }
+
