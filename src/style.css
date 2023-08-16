@@ -14,8 +14,7 @@
     border-radius: 7%;
     border-style: double;
     color: #BF80A3;
-
-    opacity: 1;
+    display: inline-block;
 
 }
 
@@ -104,24 +103,15 @@ h1 {
     width: auto;
 }
 
-.card {
-    display: inline-block;
 
-}
-
-/*.container {
-
-    
-}*/
-
-#btninput {
+#btnInput {
     font-size: 15px;
     background-color: #C9D6E9;
     border-color: #89728C;
     border-radius: 15px;
     margin-left: 5px;
 }
-#btninput:hover {
+#btnInput:hover {
     background-color: #ffffff;
 }
 

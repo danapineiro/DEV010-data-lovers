@@ -77,4 +77,3 @@ searchButton.addEventListener("click", () => {
   }
   showCards(searchResults);
 });
-
