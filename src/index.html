@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <meta charset="utf-8">
 <title>Data Lovers</title>
 <link rel="stylesheet" href="style.css" />
@@ -13,8 +12,7 @@
   <div id="root"></div>
   <script src="main.js" type="module"></script>
   <section class="box">
-    <input type="text" id="searchInput" size="40" name="search" placerholder="Buscar" class="src" autocomplete="off">
-    <button id="btnInput">Buscar</button>
+    <input type="text" id="searchInput" size="40" name="search" placeholder="Buscar carta" class="src" autocomplete="off">
     <div id="searchResults"></div>
   </section>
 
@@ -37,7 +35,18 @@
     </select>
   </section>
   <div id="cards">
-  <p id="showErrors"></p>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="cardMeaning"></p>
+      </div>
+
+    </div>
+    <p id="showErrors"></p>
+  </div>
   </div>
 </body>
 <footer>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro & Regina Esquivel.</footer>
