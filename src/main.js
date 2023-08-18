@@ -1,9 +1,9 @@
 import tarot from './data/tarot/tarot.js';
 
 const principalDiv = document.createElement("div");
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // variable que tomaran los valores de los selects
 let arcano;
@@ -51,16 +51,15 @@ function showCards(cards) { //showcards recibe un array de cartas
     const containerButtons = document.createElement("div");
     const img = document.createElement("img");
 
-    const buttonLeft = document.createElement("button");
-    buttonLeft.setAttribute("name", cards[i].name_short);
-    buttonLeft.innerText = "Izquierdo";
-    buttonLeft.classList.add("btnLeft");
-    buttonLeft.addEventListener ("click", (e) => {
+    const buttonLeft = document.createElement("button"); // en esta funcion tengo mi boton
+    buttonLeft.setAttribute("name", cards[i].name_short); //le agrego iteracion 
+    buttonLeft.innerText = "Izquierdo"; //imprimo mi boton en el html
+    buttonLeft.classList.add("btnLeft");//aqui le agregue una lista a mi boton
+    buttonLeft.addEventListener ("click", (e) => { //aqui comienza mi funcion con el evento listener
       const cardMeaning = document.getElementById("cardMeaning");
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
       cardMeaning.innerHTML = card.meaning_rev;
-      console.log(e.target.name);
-      modal.style.display = "block";
+      modal.style.display = "block"; //esta es mi pantalla emergente donde imprimo mi informacion de mi carta
     })
 
     const buttonRight = document.createElement("button");
@@ -71,7 +70,6 @@ function showCards(cards) { //showcards recibe un array de cartas
       const cardMeaning = document.getElementById("cardMeaning");
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
       cardMeaning.innerHTML = card.meaning_up;
-      console.log(e.target.name);
       modal.style.display = "block";
     })
 
@@ -100,16 +98,12 @@ const searchInput = document.getElementById("searchInput");
 
 const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
-  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
+ const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
   if (searchResults.length === 0){
-    showErrors.innerHTML = 'No se encontraron resultados para: ' + searchTerm + ".";
-  }
-  showCards(searchResults);
+  showErrors.innerHTML; 
+ }
+ showCards(searchResults);
 } )
-
-
-
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
