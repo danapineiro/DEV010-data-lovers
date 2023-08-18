@@ -1,3 +1,4 @@
+import { filterBySuit, filterByType } from './data.js';
 import tarot from './data/tarot/tarot.js';
 
 const principalDiv = document.createElement("div");
@@ -13,15 +14,15 @@ let tipo;
 const selectArcanos = document.getElementById("selectArcanos");
 selectArcanos.addEventListener("change", (e) => { // e= es el option al que elegi en el menu de opciones.
   arcano = e.target.value;// se le agrega el e.target.value, donde value trae el valor de option que es minor o major.
-  const arcanoSelected = tarot.cards.filter((obj) => obj.type === arcano);
+  const arcanoSelected = filterByType(tarot.cards,arcano)
   showCards(arcanoSelected);
 });
 
 // funcionalidad cuando el selector de tipos cambie
 const selectTipos = document.getElementById("selectTipos");
 selectTipos.addEventListener("change", (e) => {
-  tipo = e.target.value
-  const tiposSelected = tarot.cards.filter((obj) => obj.suit === tipo);
+  tipo = e.target.value;
+  const tiposSelected = filterBySuit(tarot.cards,tipo) 
   showCards(tiposSelected);
 });
 
@@ -60,12 +61,11 @@ function showCards(cards) { //showcards recibe un array de cartas
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
       cardMeaning.innerHTML = card.meaning_rev;
       modal.style.display = "block"; //esta es mi pantalla emergente donde imprimo mi informacion de mi carta
-    })
 
     const buttonRight = document.createElement("button");
     buttonRight.setAttribute("name", cards[i].name_short);
     buttonRight.classList.add("btnRight");
-    buttonRight.innerText = "Derecho";
+    buttonRight.innerText = "Right";
     buttonRight.addEventListener ("click", (e) => {
       const cardMeaning = document.getElementById("cardMeaning");
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
@@ -100,11 +100,32 @@ const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
   if (searchResults.length === 0){
-  showErrors.innerHTML; 
- }
- showCards(searchResults);
+    showErrors.innerHTML;
+  }
+  showCards(searchResults);
 } )
+  
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+/*function contarCartasArcanos(cartas) {
+  let arcanosMayores = 0;
+  let arcanosMenores = 0;
+
+  cartas.forEach(carta => {
+    if (carta.type === 'major') {
+      arcanosMayores++;
+    } else if (carta.type === 'minor') {
+      arcanosMenores++;
+    }
+    return {
+      arcanosMayores,
+      arcanosMenores
+    };
+  })
+ 
+}*/
+
+
