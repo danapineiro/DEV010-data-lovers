@@ -97,5 +97,7 @@ describe('filterBySuit', () => {
     ]
     const tipo = "suit";
     expect(filterBySuit(cards,tipo).length);
+    //console.log(filterBySuit(cards, 'pikachu'));
+    // expect(filterBySuit(cards, 'pikachu'))
   });
 });

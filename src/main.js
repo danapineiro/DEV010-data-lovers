@@ -61,7 +61,7 @@ function showCards(cards) { //showcards recibe un array de cartas
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
       cardMeaning.innerHTML = card.meaning_rev;
       modal.style.display = "block"; //esta es mi pantalla emergente donde imprimo mi informacion de mi carta
-
+    });
     const buttonRight = document.createElement("button");
     buttonRight.setAttribute("name", cards[i].name_short);
     buttonRight.classList.add("btnRight");
@@ -71,7 +71,7 @@ function showCards(cards) { //showcards recibe un array de cartas
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
       cardMeaning.innerHTML = card.meaning_up;
       modal.style.display = "block";
-    })
+    });
 
     img.classList.add("imgClass");
 
@@ -98,7 +98,7 @@ const searchInput = document.getElementById("searchInput");
 
 const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
- const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
+  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
   if (searchResults.length === 0){
     showErrors.innerHTML;
   }
@@ -127,5 +127,3 @@ span.onclick = function() {
   })
  
 }*/
-
-
