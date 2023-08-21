@@ -102,7 +102,7 @@ const searchInput = document.getElementById("searchInput");
 const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
   const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
-  if (searchResults.length === 0) {
+  if (searchResults.length === 0){
     showErrors.innerHTML;
   }
   showCards(searchResults);
@@ -129,5 +129,3 @@ span.onclick = function () {
     };
   })
 }*/
-
-
