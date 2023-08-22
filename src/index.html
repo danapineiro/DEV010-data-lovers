@@ -16,20 +16,17 @@
   <div id="root"></div>
   <script src="main.js" type="module"></script>
   <section class="box">
-    <input type="text" id="searchInput" size="40" name="search" placeholder="Search for a card" class="src" autocomplete="off">
+    <input type="text" id="searchInput" size="40" name="search" placeholder="Search by a card" class="src" autocomplete="off">
   </section>
-  <section>
-    <button id="btnRandomCard">Random card</button>
-    <p id="randomCardInfo"></p>
-  </section>
+  
   <section class="container"> 
-
     <button id="btnAllCards">All Cards</button>
     <select name="Nombre de arcanos" id="selectArcanos">
       <option>Select an arcana</option>
       <option value="major">Major</option>
       <option value="minor">Minor</option>
     </select>
+
     <select name="Tipos de cartas" id="selectTipos">
       <option>Select a type</option>
       <option value="pentacles">Pentacles</option>
@@ -37,6 +34,8 @@
       <option value="cups">Cups</option>
       <option value="swords">Swords</option>
     </select>
+    <button id="btnRandomCard">Random card</button>
+    <p id="randomCardInfo"></p>
   </section>
   <p id="totalCards"></p>
   <div id="cards">

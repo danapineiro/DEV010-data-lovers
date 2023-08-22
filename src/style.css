@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family: "Shadows_Into_Light variant0", Tofu;
     color: #ffffff;
 }
 
@@ -48,6 +48,7 @@ body {
 }
 
 #totalCards {
+    background-color: #373259;
 text-align: center;
 color: #ffffff;
 }
@@ -81,6 +82,8 @@ h1 {
     margin-bottom: 2em;
     color: #ffffff;
     background-color: #6c5b7b;
+    font-family: "Shadows_Into_Light variant0", Tofu;
+
 }
 
 #btnAllCards {
@@ -162,10 +165,19 @@ h1 {
     height: 30%;
     
 }
+#btnRandomCard{
+    justify-content: end;
+}
+#randomCardInfo{
+    background-color: #5f5a7d;
+}
 
 #info {
+    background-color: #51438b;
     font-size: 107%;
     text-align:justify;
+    font-family: 'Abel', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 
 }
 
