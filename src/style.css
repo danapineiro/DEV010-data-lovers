@@ -1,14 +1,12 @@
 .card:hover {
     cursor: pointer;
-    background: linear-gradient(90.21deg, #FDCEDF -5.91%, #efa5c0 111.58%);
+    background: linear-gradient(to bottom, #373259, #1d1a23);
 }
 
 .card {
     display: inline-block;
-    border-radius: 10%;
     border-style: double;
-    border: 10%;
-    color: #BF80A3;
+    border: none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -16,29 +14,42 @@
     overflow: hidden;
     position: relative;
     margin: 1em;
-    
+}
+
+.containerButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .card:hover div.cardDetails {
     opacity: 1;
-    color: #59485c;
+    color: #ffffff;
 }
 
 .card:hover img {
-    opacity: .1;
+    opacity: .5;
 }
 
 body {
-
-    background: linear-gradient(90.21deg, #FFBDF7 -5.91%, #b4aae2 111.58%);
-    background-size: 1550px 650px;
-
+    background-image: url(tarot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
 }
 
 #principalDiv {
-    max-width: 800px;
-    background-color: #C9A7EB;
-    
+    max-width: 1000px;
+
+
+}
+
+#totalCards {
+text-align: center;
+color: #ffffff;
 }
 
 #cards {
@@ -53,43 +64,35 @@ body {
 }
 
 footer {
+    background-color: #9b8dd7;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
     width: 99%;
     height: 40px;
-    color: #89728C;
     margin-bottom: auto;
-
+    color: #000000;
 }
 
 h1 {
     font-size: 200%;
-    text-align: left;
-    font-family: 'Lobster';
-    text-shadow: -2px -2px 1px #ffffff, 2px 2px 1px #ffffff, -2px 2px 1px #ffffff, 2px -2px 1px #ffffff;
-    color: #BF80A3;
-
+    text-align: center;
+    margin-bottom: 2em;
+    color: #ffffff;
+    background-color: #6c5b7b;
 }
 
 #btnAllCards {
-    font-size: 25px;
-    background-color: #C9D6E9;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #6c5b7b;
     justify-content: flex-end;
     margin-right: 3%;
     margin-left: 20%;
-    border-color: #89728C;
-    border-radius: 15px;
+    border-radius: 4px;
     margin-bottom: 20px;
-
-
 }
-
-#btnAllCards:hover {
-    background-color: #ffffff;
-}
-
 #Arcanos {
     justify-content: flex-end;
 }
@@ -97,23 +100,17 @@ h1 {
 #Tipos {
     justify-content: flex-end;
 }
-
-
 .container {
     font-size: large;
     text-align: center;
-    justify-content: flex-end;
-
-
+    justify-content: flex;
 }
-
 
 .imgClass {
     border-radius: 15px;
     max-height: 250px;
     width: auto;
 }
-
 
 .card-container {
     align-items: center;
@@ -124,35 +121,27 @@ h1 {
     margin-bottom: 24px;
     overflow: hidden;
     position: relative;
-    
 }
 
-#btnInput {
-    font-size: 15px;
-    background-color: #C9D6E9;
-    border-color: #89728C;
-    border-radius: 15px;
-    margin-left: 5px;
+#searchInput {
+    border-radius: 4px;
+    height: 30px;
 }
-
-#btnInput:hover {
-    background-color: #ffffff;
-}
-
 
 #selectArcanos {
-    background-color: #D5E5F2;
-    font-size: 25px;
-    border-radius: 15px;
-    border-color: #89728C;
+    color: #ffffff;
+    background-color: #6c5b7b;
+    font-size: 1em;
+    border-radius: 4px;
+    margin-right: 0.7em;
 }
 
 
 #selectTipos {
-    background-color: #d5a3be;
-    font-size: 25px;
-    border-radius: 15px;
-    border-color: #89728C;
+    color: #ffffff;
+    background-color: #6c5b7b;
+    font-size: 1em;
+    border-radius: 4px;
 
 }
 
@@ -211,7 +200,6 @@ h1 {
     transition: .5s ease-in-out;
     width: 100%;
 }
-
 /* The Modal (background) */
 .modal {
     display: none;
@@ -243,8 +231,8 @@ h1 {
     border: 1px solid #888;
     width: 30%;
     text-align: center;
-    background: linear-gradient(90.21deg, #BA90C6 -5.91%, #C0DBEA 111.58%);
-    color: rgb(68, 65, 67);
+    background-color: #241d50;
+    color: #ffffff;
     /* Could be more or less, depending on screen size */
 }
 
@@ -262,3 +250,5 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*linear-gradient(90.21deg, #FFBDF7 -5.91%, #b4aae2 111.58%);*/

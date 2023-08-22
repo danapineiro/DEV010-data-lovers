@@ -48,11 +48,12 @@ function showCards(cards) { //showcards recibe un array de cartas
     cardDetails.appendChild(cardTitle);
     const containerCarta = document.createElement("div");
     const containerButtons = document.createElement("div");
+    containerButtons.classList.add("containerButtons");
     const img = document.createElement("img");
 
     const buttonLeft = document.createElement("button"); // en esta funcion tengo mi boton
     buttonLeft.setAttribute("name", cards[i].name_short); //le agrego iteracion 
-    buttonLeft.innerText = "Izquierdo"; //imprimo mi boton en el html
+    buttonLeft.innerText = "Reverse"; //imprimo mi boton en el html
     buttonLeft.classList.add("btnLeft");//aqui le agregue una lista a mi boton
     buttonLeft.addEventListener("click", (e) => { //aqui comienza mi funcion con el evento listener
       const cardMeaning = document.getElementById("cardMeaning");
@@ -63,7 +64,7 @@ function showCards(cards) { //showcards recibe un array de cartas
     const buttonRight = document.createElement("button");
     buttonRight.setAttribute("name", cards[i].name_short);
     buttonRight.classList.add("btnRight");
-    buttonRight.innerText = "Right";
+    buttonRight.innerText = "Up Right";
     buttonRight.addEventListener("click", (e) => {
       const cardMeaning = document.getElementById("cardMeaning");
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
@@ -94,7 +95,7 @@ function showCards(cards) { //showcards recibe un array de cartas
   if (totalCards > 1){
     cardsOrCard = "cards";
   }
-  document.getElementById("totalCards").innerHTML = "Total: " + totalCards + " " + cardsOrCard + ".";
+  document.getElementById("totalCards").innerHTML = "Total: " + totalCards + " " + cardsOrCard ;
 }
 
 const searchInput = document.getElementById("searchInput");
