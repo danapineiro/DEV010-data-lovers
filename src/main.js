@@ -125,7 +125,7 @@ const randomCardInfo = document.getElementById("randomCardInfo");//recibe el ele
 
 randomCardButton.addEventListener("click", () => {//cuando se hace clic se ejecuta la funcion
   const randomCard = getRandomCard();//se llama para obtener la carta aleatoria
-  randomCardInfo.textContent = `card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`
+  randomCardInfo.textContent = `Card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`;
 });//aqui los que se hace es llamar el contenido que quiero que se vea de la carta aleaotria
 //las blackticks se usan para definir el inicio y el final de la cadena de texto
 //${} para incrustar valores de variables dentro de la cadena de texto
