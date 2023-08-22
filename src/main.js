@@ -52,7 +52,7 @@ function showCards(cards) { //showcards recibe un array de cartas
 
     const buttonLeft = document.createElement("button"); // en esta funcion tengo mi boton
     buttonLeft.setAttribute("name", cards[i].name_short); //le agrego iteracion 
-    buttonLeft.innerText = "Izquierdo"; //imprimo mi boton en el html
+    buttonLeft.innerText = "Reverse"; //imprimo mi boton en el html
     buttonLeft.classList.add("btnLeft");//aqui le agregue una lista a mi boton
     buttonLeft.addEventListener("click", (e) => { //aqui comienza mi funcion con el evento listener
       const cardMeaning = document.getElementById("cardMeaning");
@@ -112,6 +112,22 @@ searchInput.addEventListener("keyup", (e) => {
 span.onclick = function () {
   modal.style.display = "none";
 }
+
+//esta funcion se encarga de seleccionar una carta aleatoria del grupo de cartas que estan Tarot.cards
+function getRandomCard(){
+  const randomIndex = Math.floor(Math.random() * tarot.cards.length); //math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
+  return tarot.cards[randomIndex]; //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
+}//tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
+
+const randomCardButton = document.getElementById("btnRandomCard");//recibe el elemento del boton con el id BRC
+const randomCardInfo = document.getElementById("randomCardInfo");//recibe el elemento del parrafo con el id RCI
+
+randomCardButton.addEventListener("click", () => {//cuando se hace clic se ejecuta la funcion
+  const randomCard = getRandomCard();//se llama para obtener la carta aleatoria
+  randomCardInfo.textContent = `card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`;
+});//aqui los que se hace es llamar el contenido que quiero que se vea de la carta aleaotria
+//las blackticks se usan para definir el inicio y el final de la cadena de texto
+//${} para incrustar valores de variables dentro de la cadena de texto
 
 /*function contarCartasArcanos(cartas) {
   let arcanosMayores = 0;
