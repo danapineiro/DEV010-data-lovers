@@ -48,6 +48,7 @@ function showCards(cards) { //showcards recibe un array de cartas
     cardDetails.appendChild(cardTitle);
     const containerCarta = document.createElement("div");
     const containerButtons = document.createElement("div");
+    containerButtons.classList.add("containerButtons");
     const img = document.createElement("img");
 
     const buttonLeft = document.createElement("button"); // en esta funcion tengo mi boton
@@ -63,7 +64,7 @@ function showCards(cards) { //showcards recibe un array de cartas
     const buttonRight = document.createElement("button");
     buttonRight.setAttribute("name", cards[i].name_short);
     buttonRight.classList.add("btnRight");
-    buttonRight.innerText = "Right";
+    buttonRight.innerText = "Up Right";
     buttonRight.addEventListener("click", (e) => {
       const cardMeaning = document.getElementById("cardMeaning");
       const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
@@ -94,7 +95,7 @@ function showCards(cards) { //showcards recibe un array de cartas
   if (totalCards > 1){
     cardsOrCard = "cards";
   }
-  document.getElementById("totalCards").innerHTML = "Total: " + totalCards + " " + cardsOrCard + ".";
+  document.getElementById("totalCards").innerHTML = "Total: " + totalCards + " " + cardsOrCard ;
 }
 
 const searchInput = document.getElementById("searchInput");

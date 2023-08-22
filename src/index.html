@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
   <header>
@@ -14,24 +17,20 @@
   <script src="main.js" type="module"></script>
   <section class="box">
     <input type="text" id="searchInput" size="40" name="search" placeholder="Search for a card" class="src" autocomplete="off">
-    <div id="searchResults"></div>
   </section>
   <section>
     <button id="btnRandomCard">Random card</button>
     <p id="randomCardInfo"></p>
   </section>
-
   <section class="container"> 
-    <button id="btnAllCards">All Cards</button>
 
-      <label class="clase" for="Arcanos"></label>
-      <select name="Nombre de arcanos" id="selectArcanos">
+    <button id="btnAllCards">All Cards</button>
+    <select name="Nombre de arcanos" id="selectArcanos">
       <option>Select an arcana</option>
       <option value="major">Major</option>
       <option value="minor">Minor</option>
-      </select>
-      <label class="clase" for="Tipos de cartas"></label>
-      <select name="Tipos de cartas" id="selectTipos">
+    </select>
+    <select name="Tipos de cartas" id="selectTipos">
       <option>Select a type</option>
       <option value="pentacles">Pentacles</option>
       <option value="wands">Wands</option>
@@ -39,7 +38,7 @@
       <option value="swords">Swords</option>
     </select>
   </section>
-  <p id="totalCards">Total: </p>
+  <p id="totalCards"></p>
   <div id="cards">
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -50,8 +49,8 @@
         <p id="cardMeaning"></p>
       </div>
     </div>
-    </div>
-    <p id="showErrors"></p>
+  </div>
+  <p id="showErrors"></p>
   </div>
     <img src="https://i.ibb.co/b33Jvp9/photo-1600429991827-5224817554f8-ixlib-rb-4-0.jpg" alt="photo-1600429991827-5224817554f8-ixlib-rb-4-0" class="forma"></a>    
     <p id="info">Tarot is a set of cards used for divination and spiritual reflection. Each tarot card has unique symbolism and is believed to reveal information about a person's past, present, and future, as well as provide guidance and insights into their life.
