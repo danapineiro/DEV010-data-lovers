@@ -150,6 +150,25 @@ h1 {
     font-family: fantasy;
 }
 
+.forma {
+    shape-outside: url();
+    shape-image-threshold: 0.5;
+    shape-margin: 40px;
+    float: left;
+    border-color:#59485c;
+    border-radius: 2%;
+    margin-right: 2%;
+    width: 30%; ;
+    height: 30%;
+    
+}
+
+#info {
+    font-size: 107%;
+    text-align:justify;
+
+}
+
 /*#boton-tipos {
     display: block;
     background-color:#BF80B5;
