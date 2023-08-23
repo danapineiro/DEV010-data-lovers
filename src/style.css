@@ -168,9 +168,17 @@ h1 {
 }
 #btnRandomCard{
     justify-content: end;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #6c5b7b;
+    justify-content: flex-end;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 #randomCardInfo{
-    background-color: #5f5a7d;
+    background-color: #5f5a7d; 
 }
 
 #info {
