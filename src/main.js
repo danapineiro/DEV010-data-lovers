@@ -13,7 +13,7 @@ let tipo;
 const selectArcanos = document.getElementById("selectArcanos");
 selectArcanos.addEventListener("change", (e) => { // e= es el option al que elegi en el menu de opciones.
   arcano = e.target.value;// se le agrega el e.target.value, donde value trae el valor de option que es minor o major.
-  const arcanoSelected = filterByType(tarot.cards, arcano); //aqui filtramos por tipo de carcano
+  const arcanoSelected = filterByType(tarot.cards, arcano); //aqui filtramos por tipo de carcano// filter me regresa un array nuevo. 
   showCards(arcanoSelected); //mediante la funcion showcards, mandamos llamar nuestra constante arcanoSelected.
 });
 
@@ -38,6 +38,7 @@ function removeChildren(component) {
 }
 function showCards(cards) { //showcards recibe un array de cartas 
   removeChildren(principalDiv);
+  document.getElementById("information").style.display = "none";
   const totalCards = cards.length;
   // for que muestra las cartas del tarot en la pantalla
   for (let i = 0; i < cards.length; i++) { 
@@ -83,8 +84,9 @@ function showCards(cards) { //showcards recibe un array de cartas
     containerButtons.appendChild(buttonRight);
 
     containerCarta.appendChild(img);
-    containerCarta.appendChild(containerButtons);
     containerCarta.appendChild(cardDetails);
+    containerCarta.appendChild(containerButtons);
+    
     principalDiv.id = "principalDiv";
     principalDiv.appendChild(containerCarta);
   }
@@ -95,7 +97,7 @@ function showCards(cards) { //showcards recibe un array de cartas
   if (totalCards > 1){
     cardsOrCard = "cards";
   }
-  document.getElementById("totalCards").innerHTML = "Total: " + totalCards + " " + cardsOrCard ;
+  document.getElementById("totalCards").innerHTML = `Total: ${totalCards } ${cardsOrCard}`;
 }
 
 const searchInput = document.getElementById("searchInput");
@@ -119,13 +121,12 @@ function getRandomCard(){
   const randomIndex = Math.floor(Math.random() * tarot.cards.length); //math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
   return tarot.cards[randomIndex]; //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
 }//tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
-
 const randomCardButton = document.getElementById("btnRandomCard");//recibe el elemento del boton con el id BRC
 const randomCardInfo = document.getElementById("randomCardInfo");//recibe el elemento del parrafo con el id RCI
-
 randomCardButton.addEventListener("click", () => {//cuando se hace clic se ejecuta la funcion
   const randomCard = getRandomCard();//se llama para obtener la carta aleatoria
-  randomCardInfo.textContent = `Card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`;
+  showCards([randomCard]);
+  //randomCardInfo.textContent = `Card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`;
 });//aqui los que se hace es llamar el contenido que quiero que se vea de la carta aleaotria
 //las blackticks se usan para definir el inicio y el final de la cadena de texto
 //${} para incrustar valores de variables dentro de la cadena de texto

@@ -1,6 +1,6 @@
 .card:hover {
     cursor: pointer;
-    background: linear-gradient(to bottom, #373259, #1d1a23);
+    background: linear-gradient(to bottom, #373259, #867070);
 }
 
 .card {
@@ -32,13 +32,14 @@
 }
 
 body {
-    background-image: url(tarot.jpg);
+    /*background-image: url(tarot.jpg);*/
+    background-color: #FBF2ED;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: "Shadows_Into_Light variant0", Tofu;
-    color: #ffffff;
+    color: #000000;
 }
 
 #principalDiv {
@@ -48,10 +49,10 @@ body {
 }
 
 #totalCards {
-    background-color: #373259;
+font: bold 120% cursive;
+background-color: #D5B4B4;
 text-align: center;
-background-color: #59485c;
-color: #ffffff;
+color: #000000;
 }
 
 #cards {
@@ -66,7 +67,8 @@ color: #ffffff;
 }
 
 footer {
-    background-color: #9b8dd7;
+    background-color: #D5B4B4;
+    font: oblique bold 150% ;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -78,24 +80,32 @@ footer {
 }
 
 h1 {
-    font-size: 200%;
+    /*background-image: url(tarot.jpg);*/
     text-align: center;
     margin-bottom: 2em;
-    color: #ffffff;
-    background-color: #6c5b7b;
+    color: #000000;
+    /*background-color: #D5B4B4;*/
+    font: oblique bold 300% cursive;
     font-family: "Shadows_Into_Light variant0", Tofu;
 
 }
 
 #btnAllCards {
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #6c5b7b;
+    padding: 5px 10px;
+    font: bold 100% cursive;
+    color: #000000;
+    background-color: #A9907E;
     justify-content: flex-end;
     margin-right: 3%;
     margin-left: 20%;
     border-radius: 4px;
     margin-bottom: 20px;
+}
+.btnLeft{
+    background-color: #D5B4B4;
+}
+.btnRight{
+    background-color: #D5B4B4;
 }
 #Arcanos {
     justify-content: flex-end;
@@ -130,21 +140,25 @@ h1 {
 #searchInput {
     border-radius: 4px;
     height: 30px;
+    background-color: #D5B4B4;
+    color:#000000;
 }
 
 #selectArcanos {
-    color: #ffffff;
-    background-color: #6c5b7b;
-    font-size: 1em;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #A9907E;
+    font: bold 100% cursive;
     border-radius: 4px;
     margin-right: 0.7em;
 }
 
 
 #selectTipos {
-    color: #ffffff;
-    background-color: #6c5b7b;
-    font-size: 1em;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #A9907E;
+    font: bold 100% cursive;
     border-radius: 4px;
 
 }
@@ -155,11 +169,11 @@ h1 {
 }
 
 .forma {
-    shape-outside: url();
+    
     shape-image-threshold: 0.5;
     shape-margin: 40px;
     float: left;
-    border-color:#59485c;
+    border-color:#C07F00;
     border-radius: 2%;
     margin-right: 2%;
     width: 23.6%; ;
@@ -167,29 +181,33 @@ h1 {
     
 }
 #btnRandomCard{
+    padding: 5px 10px;
     justify-content: end;
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #6c5b7b;
+
+    font: bold 100% cursive;
+    color: #000000;
+    background-color: #A9907E;
     justify-content: flex-end;
     margin-right: 3%;
     margin-left: 3%;
     border-radius: 4px;
     margin-bottom: 20px;
 }
-#randomCardInfo{
-    background-color: #5f5a7d; 
-}
 
 #info {
-    background-color: #51438b;
+    background-color: #E4D0D0;
     font-size: 107%;
     text-align:justify;
-    background-color: #9b8dd7;
+    align-items: center;
+    display: flex;  
+    font: bold 120% cursive;
+    
 }
-
-#randomCardInfo {
-    background-color: #9b8dd7;
+#information{
+    justify-content: center;
+    
+    
+    
 }
 
 /*#boton-tipos {
@@ -233,7 +251,9 @@ h1 {
 }*/
 .cardDetails {
     left: 50%;
+    right: 50%;
     opacity: 0;
+    height: 100px;
     position: absolute;
     text-align: center;
     top: 65%;
@@ -266,15 +286,16 @@ h1 {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F5EBEB;
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #fcf2f2;
     width: 30%;
     text-align: center;
-    background-color: #241d50;
-    color: #ffffff;
+    background-color: #D5B4B4;
+    color: #000000;
     /* Could be more or less, depending on screen size */
 }
 
