@@ -183,6 +183,7 @@ h1 {
 #btnRandomCard{
     padding: 5px 10px;
     justify-content: end;
+
     font: bold 100% cursive;
     color: #000000;
     background-color: #A9907E;
@@ -191,7 +192,6 @@ h1 {
     margin-left: 3%;
     border-radius: 4px;
     margin-bottom: 20px;
-    
 }
 
 #info {
