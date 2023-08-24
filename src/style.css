@@ -32,7 +32,8 @@
 }
 
 body {
-    /*background-image: url(tarot.jpg);*/
+    background-image: url(tarot.jpg);
+    backdrop-filter: blur(4px);
     background-color: #FBF2ED;
     background-repeat: no-repeat;
     background-size: cover;
