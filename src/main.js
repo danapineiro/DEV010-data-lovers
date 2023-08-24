@@ -122,7 +122,7 @@ function getRandomCard(){
   return tarot.cards[randomIndex]; //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
 }//tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
 const randomCardButton = document.getElementById("btnRandomCard");//recibe el elemento del boton con el id BRC
-const randomCardInfo = document.getElementById("randomCardInfo");//recibe el elemento del parrafo con el id RCI
+//const randomCardInfo = document.getElementById("randomCardInfo");//recibe el elemento del parrafo con el id RCI
 randomCardButton.addEventListener("click", () => {//cuando se hace clic se ejecuta la funcion
   const randomCard = getRandomCard();//se llama para obtener la carta aleatoria
   showCards([randomCard]);
