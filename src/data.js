@@ -1,7 +1,8 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const randomCard = (cards) => {
+  const randomIndex = Math.floor(Math.random() * cards.length);
+  return randomIndex;
 };
 
 export const filterByType = (cards,arcano) => {
@@ -14,9 +15,7 @@ export const filterBySuit = (cards,tipo) => {
   return tiposSelected;
 };
 
-/*export const example = () => {
-  return 'example';
-};*/
+
 
 
 

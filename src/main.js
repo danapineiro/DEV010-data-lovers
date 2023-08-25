@@ -1,4 +1,4 @@
-import { filterBySuit, filterByType } from './data.js';
+import { filterBySuit, filterByType, randomCard } from './data.js';
 import tarot from './data/tarot/tarot.js';
 
 const principalDiv = document.createElement("div"); //Este es el div que contiene todas mis cartas. 
@@ -118,18 +118,19 @@ span.onclick = function () {
 
 //esta funcion se encarga de seleccionar una carta aleatoria del grupo de cartas que estan Tarot.cards
 function getRandomCard(){
-  const randomIndex = Math.floor(Math.random() * tarot.cards.length); //math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
-  return tarot.cards[randomIndex]; //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
-}//tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
+  const randomIndex = randomCard(tarot.cards)
+  return tarot.cards[randomIndex]; 
+}//math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
+//math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
+//tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
+
 const randomCardButton = document.getElementById("btnRandomCard");//recibe el elemento del boton con el id BRC
-//const randomCardInfo = document.getElementById("randomCardInfo");//recibe el elemento del parrafo con el id RCI
 randomCardButton.addEventListener("click", () => {//cuando se hace clic se ejecuta la funcion
   const randomCard = getRandomCard();//se llama para obtener la carta aleatoria
-  showCards([randomCard]);
-  //randomCardInfo.textContent = `Card: ${randomCard.name}, Arcana: ${randomCard.type}, Meaning Up: ${randomCard.meaning_up}, Meaning Rev: ${randomCard.meaning_rev}`;
-});//aqui los que se hace es llamar el contenido que quiero que se vea de la carta aleaotria
-//las blackticks se usan para definir el inicio y el final de la cadena de texto
-//${} para incrustar valores de variables dentro de la cadena de texto
+  showCards([randomCard]);//aqui los que se hace es llamar el contenido que quiero que se vea de la carta aleaotria
+});
+
+
 
 /*function contarCartasArcanos(cartas) {
   let arcanosMayores = 0;
