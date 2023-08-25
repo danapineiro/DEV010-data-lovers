@@ -2,6 +2,7 @@
     cursor: pointer;
     background: linear-gradient(to bottom, #710da7, #ddbcf2);
 }
+
 /*@media screen and (min-width: 769px) {*/
 
 .card {
@@ -16,8 +17,8 @@
     position: relative;
     margin: 1em;
     /*width: calc(25% - 20px);*/
- 
-   
+
+
 }
 
 .containerButtons {
@@ -36,11 +37,11 @@
 }
 
 body {
-   background-image: url(tarot3.jpg);
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-image: url(tarot3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #principalDiv {
@@ -56,6 +57,7 @@ body {
     margin-right: 45%;
     border-radius: 4px;
 }
+
 /*@media screen and (min-width: 769px) {*/
 #cards {
     display: flex;
@@ -119,7 +121,7 @@ h1 {
 
 }
 
-.btnLeft{
+.btnLeft {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
     color: #ddbcf2;
@@ -133,7 +135,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btnLeft:hover{
+.btnLeft:hover {
     background-color: #ddbcf2;
     color: #710da7;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -142,7 +144,7 @@ h1 {
     border-style: solid;
 }
 
-.btnRight{
+.btnRight {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
     color: #ddbcf2;
@@ -156,7 +158,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.btnRight:hover{
+.btnRight:hover {
     background-color: #ddbcf2;
     color: #710da7;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -164,6 +166,7 @@ h1 {
     border-color: #710da7;
     border-style: solid;
 }
+
 #Arcanos {
     justify-content: flex-end;
 }
@@ -171,12 +174,13 @@ h1 {
 #Tipos {
     justify-content: flex-end;
 }
+
 .container {
     font-size: large;
     text-align: center;
     justify-content: flex-start;
     margin-top: -5%;
-  
+
 }
 
 .imgClass {
@@ -261,15 +265,16 @@ h1 {
     shape-image-threshold: 0.5;
     shape-margin: 40px;
     float: left;
-    border-color:#C07F00;
+    border-color: #C07F00;
     border-radius: 4%;
     margin-right: 2%;
     width: 15%;
     height: 13%;
     margin-left: 1%;
-    
+
 }
-#btnRandomCard{
+
+#btnRandomCard {
     justify-content: end;
     margin-right: 3%;
     margin-left: 2%;
@@ -292,7 +297,7 @@ h1 {
     border-style: solid;
 }
 
-#information{
+#information {
     justify-content: center;
     background-color: #ddbcf2;
     background-position: center;
@@ -300,7 +305,7 @@ h1 {
     color: #51096C;
     text-align: center;
     align-items: center;
-    display: flex;  
+    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 8%;
     border-radius: 4px;
@@ -321,6 +326,7 @@ h1 {
     transition: .5s ease-in-out;
     width: 100%;
 }
+
 /* The Modal (background) */
 .modal {
     display: none;
