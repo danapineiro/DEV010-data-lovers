@@ -70,7 +70,6 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 
 ## 4. Vista previa
 
-## **Demo**
 
 **Imagen web**
 
@@ -85,6 +84,7 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 <a href="https://ibb.co/Fb4qhdz"><img src="https://i.ibb.co/jvkZ8jD/web-pantalla-random-card.jpg" alt="web-pantalla-random-card" border="0"></a>
 
 <a href="https://ibb.co/hHp2Vv9"><img src="https://i.ibb.co/P4B1g8j/web-pantalla-que-muestra-informacion-de-la-carta.jpg" alt="web-pantalla-que-muestra-informacion-de-la-carta" border="0"></a>
+
 
 **Imagen mobile**
 
@@ -101,12 +101,12 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 <a href="https://ibb.co/S7WgK3X"><img src="https://i.ibb.co/Z1trhM6/mobile-pantalla-random-card.jpg" alt="mobile-pantalla-random-card" border="0"></a>
 
 **Video Web**
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e808cf17f91c4205b419517fe817dc89?sid=8c074c06-8805-4f4c-b8dc-8065b7a58397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 **Video Mobile**
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8ba4f9aa098a406ab985ab512c077187?sid=6f8c9170-7ad2-49da-a787-3e2bbab911bd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
 
 
 ## 5. Características generales
