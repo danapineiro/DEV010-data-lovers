@@ -121,7 +121,7 @@ span.onclick = function () {
 //esta funcion se encarga de seleccionar una carta aleatoria del grupo de cartas que estan Tarot.cards
 function getRandomCard() {
   const randomIndex = randomCard(tarot.cards)
-  return [randomIndex]; 
+  return tarot.cards[randomIndex];
 }//math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
 //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
 //tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
