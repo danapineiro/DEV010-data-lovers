@@ -70,16 +70,38 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 
 ## 4. Vista previa
 
-## **Demo**
 
 **Imagen web**
-tomar captura de la imagen web
+
+<a href="https://ibb.co/hMC6bm5"><img src="https://i.ibb.co/SxJjb3T/web-pantalla-principal.jpg" alt="web-pantalla-principal" border="0"></a>
+
+<a href="https://ibb.co/LhqCk03"><img src="https://i.ibb.co/cXpNgyj/web-pantalla-all-cards.jpg" alt="web-pantalla-all-cards" border="0"></a>
+
+<a href="https://ibb.co/zNMHwyk"><img src="https://i.ibb.co/yV9BJw3/web-pantalla-arcano-major-se-alando-la-carta.jpg" alt="web-pantalla-arcano-major-se-alando-la-carta" border="0"></a>
+
 
 **Imagen mobile**
-tomar captura de la imagen tlf
 
-**Video**
-grabar un loom con la demo
+<a href="https://ibb.co/X4JQb2P"><img src="https://i.ibb.co/pPX7x0T/mobile-pantalla-principal1.png" alt="mobile-pantalla-principal1" border="0"></a>
+
+<a href="https://ibb.co/vsS4mf3"><img src="https://i.ibb.co/yhrF5K6/mobile-pantalla-principal-2.jpg" alt="mobile-pantalla-principal-2" border="0"></a>
+
+<a href="https://ibb.co/T4s9NxX"><img src="https://i.ibb.co/48Hh0ny/mobile-pantalla-que-muestra-informacion-de-la-carta.png" alt="mobile-pantalla-que-muestra-informacion-de-la-carta" border="0"></a>
+
+<a href="https://ibb.co/p33h0T0"><img src="https://i.ibb.co/K99K0g0/mobile-pantalla-al-buscar-una-carta-por-nombre.jpg" alt="mobile-pantalla-al-buscar-una-carta-por-nombre" border="0"></a>
+
+<a href="https://ibb.co/YTG07MQ"><img src="https://i.ibb.co/5xVKWy4/mobile-pantalla-arcano-se-analdo-la-carta.png" alt="mobile-pantalla-arcano-se-analdo-la-carta" border="0"></a>
+
+<a href="https://ibb.co/S7WgK3X"><img src="https://i.ibb.co/Z1trhM6/mobile-pantalla-random-card.jpg" alt="mobile-pantalla-random-card" border="0"></a>
+
+**Video Web**
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e808cf17f91c4205b419517fe817dc89?sid=8c074c06-8805-4f4c-b8dc-8065b7a58397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+**Video Mobile**
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8ba4f9aa098a406ab985ab512c077187?sid=6f8c9170-7ad2-49da-a787-3e2bbab911bd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 ## 5. Características generales
 
@@ -110,12 +132,6 @@ Esto proyecto esta dirigido a los amantes del Tarot.
 ## 8. ¿Objetivos en relación con el producto?
 
  El principal propósito de este producto es permitir a los usuarios explorar de forma interactiva todas las cartas del tarot, descubriendo cuántas hay en total y comprendiendo el significado de cada una de ellas. También les brinda la capacidad de examinar las características más relevantes de cada arcano y acceder a información detallada sobre sus diferentes categorías.
-
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
 
 ## 9. Tecnologías utilizadas
 

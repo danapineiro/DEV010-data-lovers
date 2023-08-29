@@ -1,4 +1,3 @@
-// estas funciones son de ejemplo
 
 export const randomCard = (cards) => {
   const randomIndex = Math.floor(Math.random() * cards.length);
