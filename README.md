@@ -79,6 +79,12 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 
 <a href="https://ibb.co/zNMHwyk"><img src="https://i.ibb.co/yV9BJw3/web-pantalla-arcano-major-se-alando-la-carta.jpg" alt="web-pantalla-arcano-major-se-alando-la-carta" border="0"></a>
 
+<a href="https://ibb.co/V0GYvpG"><img src="https://i.ibb.co/gb8ZDF8/web-pantalla-al-buscar-una-carta-por-nombre.jpg" alt="web-pantalla-al-buscar-una-carta-por-nombre" border="0"></a>
+
+<a href="https://ibb.co/Fb4qhdz"><img src="https://i.ibb.co/jvkZ8jD/web-pantalla-random-card.jpg" alt="web-pantalla-random-card" border="0"></a>
+
+<a href="https://ibb.co/hHp2Vv9"><img src="https://i.ibb.co/P4B1g8j/web-pantalla-que-muestra-informacion-de-la-carta.jpg" alt="web-pantalla-que-muestra-informacion-de-la-carta" border="0"></a>
+
 
 **Imagen mobile**
 
@@ -132,6 +138,7 @@ Esto proyecto esta dirigido a los amantes del Tarot.
 ## 8. ¿Objetivos en relación con el producto?
 
  El principal propósito de este producto es permitir a los usuarios explorar de forma interactiva todas las cartas del tarot, descubriendo cuántas hay en total y comprendiendo el significado de cada una de ellas. También les brinda la capacidad de examinar las características más relevantes de cada arcano y acceder a información detallada sobre sus diferentes categorías.
+
 
 ## 9. Tecnologías utilizadas
 
