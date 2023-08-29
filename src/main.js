@@ -41,7 +41,7 @@ function showCards(cards) { //showcards recibe un array de cartas
   document.getElementById("information").style.display = "none";
   const totalCards = cards.length;
   // for que muestra las cartas del tarot en la pantalla
-  for (let i = 0; i < cards.length; i++) { 
+  for (let i = 0; i < cards.length; i++) {
     const cardDetails = document.createElement("div");
     cardDetails.classList.add("cardDetails")
     const cardTitle = document.createElement("h4");
@@ -76,8 +76,10 @@ function showCards(cards) { //showcards recibe un array de cartas
     img.classList.add("imgClass");
 
     img.src = cards[i].img;
+    img.style.width = "100%"
 
     containerCarta.classList.add("card");
+    containerCarta.classList.add("w3-quarter");
     containerCarta.setAttribute("name", cards[i].name)
 
     containerButtons.appendChild(buttonLeft);
@@ -86,38 +88,38 @@ function showCards(cards) { //showcards recibe un array de cartas
     containerCarta.appendChild(img);
     containerCarta.appendChild(cardDetails);
     containerCarta.appendChild(containerButtons);
-    
+
     principalDiv.id = "principalDiv";
+    principalDiv.classList.add("w3-row-padding", "w3-padding-16", "w3-center")
     principalDiv.appendChild(containerCarta);
   }
   // append que manda todas las cartas al html
   document.getElementById("cards").appendChild(principalDiv);
 
   let cardsOrCard = "card";
-  if (totalCards > 1){
+  if (totalCards > 1) {
     cardsOrCard = "cards";
   }
-  document.getElementById("totalCards").innerHTML = `Total: ${totalCards } ${cardsOrCard}`;
+  document.getElementById("totalCards").innerHTML = `Total: ${totalCards} ${cardsOrCard}`;
 }
 
 const searchInput = document.getElementById("searchInput");
 
 const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
-  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value));
-  if (searchResults.length === 0){
+  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value.trim()));
+  if (searchResults.length === 0) {
     showErrors.innerHTML;
   }
   showCards(searchResults);
 })
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
 }
 
 //esta funcion se encarga de seleccionar una carta aleatoria del grupo de cartas que estan Tarot.cards
-function getRandomCard(){
+function getRandomCard() {
   const randomIndex = randomCard(tarot.cards)
   return [randomIndex]; 
 }//math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
