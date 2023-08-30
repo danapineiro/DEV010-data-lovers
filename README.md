@@ -102,11 +102,29 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 
 **Video Web**
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e808cf17f91c4205b419517fe817dc89?sid=8c074c06-8805-4f4c-b8dc-8065b7a58397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/e808cf17f91c4205b419517fe817dc89">
+      <p>Loom Message - 29 August 2023 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/e808cf17f91c4205b419517fe817dc89">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e808cf17f91c4205b419517fe817dc89-with-play.gif">
+    </a>
+  </div>
+<br>
+    
 
 **Video Mobile**
+<div>
+    <a href="https://www.loom.com/share/8ba4f9aa098a406ab985ab512c077187">
+      <p>Loom Message - 29 August 2023 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/8ba4f9aa098a406ab985ab512c077187">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/8ba4f9aa098a406ab985ab512c077187-with-play.gif">
+    </a>
+  </div>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/8ba4f9aa098a406ab985ab512c077187?sid=6f8c9170-7ad2-49da-a787-3e2bbab911bd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
 
 
 ## 5. Características generales
