@@ -1,77 +1,69 @@
 # **Welcome to Mystic Tarot**
 
-## Contenido
+## Table of Contents
 
-* [1. Resumen del proyecto](#1-resumen-del-proyecto)
-* [2. Historias de usuario](#2-historias-de-usuario)
-* [3. Prototipo web y mobile](#3-prototipo-web-y-mobile)
-* [4. Vista previa](#4-vista-previa)
-* [5. Características generales](#5-características-generales)
-* [6. Características de cada función](#6-caracteristicas-de-cada-función)
-* [7. ¿Quiénes son los usuarios?](#7-¿-quienes-son-los-usuarios-?)
-* [8. ¿Objetivos en relación al producto?](#8-objetivos-en-relación-al-producto)
-* [9. Tecnologías utilizadas](#9-tecnologías-utilizadas)
-* [10. Test](#9-test)
-* [11. Problemas de test](#9-problemas-de-test)
+* [1. Project Summary](#1-project-summary)
+* [2. User Stories](#2-user-stories)
+* [3. Web and Mobile Prototypes](#3-web-and-mobile-prototypes)
+* [4. Preview](#4-preview)
+* [5. General Features](#5-general-features)
+* [6. Features of Each Function](#6-features-of-each-function)
+* [7. Who are the Users?](#7-who-are-the-users)
+* [8. Objectives Related to the Product](#8-objectives-related-to-the-product)
+* [9. Technologies Used](#9-technologies-used)
+* [10. Testing](#10-testing)
+* [11. Testing Issues](#11-testing-issues)
 
 ****
 
-## 1. Resumen del proyecto
+## 1. Project Summary
 
-Este proyecto se basa en una plataforma web de datos llamada "Tarot". Su objetivo es proporcionar información detallada sobre las 78 cartas del tarot, incluyendo aspectos como el nombre, los tipos (arcanos mayores y arcanos menores) y sus significados en posición vertical y reversa. La plataforma ofrece diversas funcionalidades, que son las siguientes:
+This project is based on a web platform called "Tarot," which aims to provide detailed information about the 78 tarot cards, including aspects such as their names, types (major arcana and minor arcana), and their meanings in the upright and reversed positions. The platform offers various functionalities, which include:
 
- **Ordenamiento**: Permite organizar las cartas según su categorización en arcanos mayores y menores.
-    
- **Filtrado**: Facilita la búsqueda de cartas específicas mediante la aplicación de filtros según los tipos de cartas, como oros, bastos, espadas y copas.
-    
- **Carta Aleatoria**: Ofrece un valor añadido con la función de generar una carta de forma aleatoria al hacer clic en un botón dedicado.
-    
- **Búsqueda**: Proporciona un buscador que permite a los usuarios encontrar cartas específicas por sus nombres.
-    
- **Visualización Completa**: Dispone de un botón que permite a los usuarios ver todas las cartas en un solo lugar.
-    
+**Sorting:** Allows organizing the cards according to their categorization into major and minor arcana.
 
-En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiva y completa para explorar y comprender las cartas de manera detallada y versátil.
+**Filtering:** Facilitates the search for specific cards by applying filters based on card types, such as cups, wands, swords, and pentacles.
 
-## 2. Historias de usuario
+**Random Card:** Offers added value with the function to generate a random card by clicking on a dedicated button.
+
+**Search:** Provides a search feature that allows users to find specific cards by their names.
+
+**Full View:** Includes a button that allows users to view all the cards in one place.
+
+In summary, this web platform about tarot provides an interactive and comprehensive experience for exploring and understanding the cards in a detailed and versatile manner.
+
+
+## 2. User Stories
 
  <a href="https://ibb.co/rcHNcDh"><img src="https://i.ibb.co/D8QT80F/historias-de-usuario-tarot-mistico.jpg" alt="historias-de-usuario-tarot-mistico" border="0"></a>
 
-## 3. Prototipo Web y Mobile
+## 3. Web and Mobile Prototypes
 
-
-
-### Prototipo de baja Web en papel.
+### Paper-Based Web Low-Fidelity Prototype
 
 <a href="https://ibb.co/Rhjknz8"><img src="https://i.ibb.co/5YKgDBZ/protipo-de-baja-en-papel-dana-y-regi.jpg" alt="protipo-de-baja-en-papel-dana-y-regi" border="0"></a>
 
 
-### Prototipo de baja Web.
-
+### Web Low-Fidelity Prototype
 <a href="https://ibb.co/MSx12Wr"><img src="https://i.ibb.co/H4fPF16/prototipo-de-baja-web.jpg" alt="prototipo-de-baja-web" border="0"></a>
 
 
-### Prototipo de baja Mobile.
-
+### Mobile Low-Fidelity Prototype
  <a href="https://ibb.co/8mS1bCt"><img src="https://i.ibb.co/4F5h2q3/prototipo-de-baja-mobile.jpg" alt="prototipo-de-baja-mobile" border="0"></a>
 
-### Prototipo de alta Web.
-
+### Web High-Fidelity Prototype
 <a href="https://ibb.co/gtJJwfx"><img src="https://i.ibb.co/ZcxxKF0/prototipo-de-alta-web.jpg" alt="prototipo-de-alta-web" border="0"></a>
 
-### Prototipo de alta Mobile.
-
+### Mobile High-Fidelity Prototype
 <a href="https://ibb.co/58qvdS3"><img src="https://i.ibb.co/Snq02Mg/prototipo-de-alta-mobile.jpg" alt="prototipo-de-alta-mobile" border="0"></a>
 
-### Paleta de colores.
-
+### Color Palette
 <a href="https://ibb.co/TRwbn84"><img src="https://i.ibb.co/92pVfTb/paleta-de-colores-tarot.jpg" alt="paleta-de-colores-tarot" border="0"></a>
 
 
-## 4. Vista previa
+## 4. Preview
 
-
-**Imagen web**
+**Web Images**
 
 <a href="https://ibb.co/hMC6bm5"><img src="https://i.ibb.co/SxJjb3T/web-pantalla-principal.jpg" alt="web-pantalla-principal" border="0"></a>
 
@@ -86,7 +78,7 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 <a href="https://ibb.co/hHp2Vv9"><img src="https://i.ibb.co/P4B1g8j/web-pantalla-que-muestra-informacion-de-la-carta.jpg" alt="web-pantalla-que-muestra-informacion-de-la-carta" border="0"></a>
 
 
-**Imagen mobile**
+**Mobile Images**
 
 <a href="https://ibb.co/X4JQb2P"><img src="https://i.ibb.co/pPX7x0T/mobile-pantalla-principal1.png" alt="mobile-pantalla-principal1" border="0"></a>
 
@@ -100,7 +92,7 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 
 <a href="https://ibb.co/S7WgK3X"><img src="https://i.ibb.co/Z1trhM6/mobile-pantalla-random-card.jpg" alt="mobile-pantalla-random-card" border="0"></a>
 
-**Video Web**
+**Web Video**
 
 <div>
     <a href="https://www.loom.com/share/e808cf17f91c4205b419517fe817dc89">
@@ -113,7 +105,8 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
 <br>
     
 
-**Video Mobile**
+**Mobile Video**
+
 <div>
     <a href="https://www.loom.com/share/8ba4f9aa098a406ab985ab512c077187">
       <p>Loom Message - 29 August 2023 - Watch Video</p>
@@ -124,48 +117,43 @@ En resumen, esta plataforma web sobre el tarot brinda una experiencia interactiv
   </div>
 
 
+### 5. General Features
 
+This project consists of several main documents: **index.html, main.js, data.js, data.spec.js, package.json, style.css, and tarot.js**.
 
+-   index.html: The main structure of our website.
+-   main.js: The file containing various functions and responsible for DOM manipulation.
+-   data.js: The file housing our three central functions.
+-   package.json: The starting point for npm operations.
+-   style.css: The file that encompasses all the styles of our web page, including images.
+-   tarot.js: The file containing all the fundamental information of our website.
 
-## 5. Características generales
+## 6. Features of Each Function
 
-Este proyecto consta varios documentos principales.
-**index.html,  main.js, data.js, data.spec.js, package.json, style.css y tarot.js**.
--   index.html: la estructura principal de nuestro sitio web.
--   main.js: el archivo que contiene diversas funciones y se encarga de la manipulación del DOM.
--   data.js: el archivo que alberga nuestras tres funciones centrales.
--   package.json: el punto de inicio para las operaciones con npm.
--   style.css: el archivo que engloba todos los estilos de nuestra página web, incluyendo imágenes.
--   tarot.js: el archivo que contiene toda la información fundamental de nuestro sitio web.
+### **data.js**
 
-## 6. Características de cada función
+**randomCard (getRandomCard):** This function selects a card randomly each time a click is made.
 
- ## **data.js**
+**filterByType (sortByCategory):** This function searches for cards based on their categorization as major or minor arcana.
 
-**randomCard (obtenerCartaAleatoria):** Esta función se encarga de seleccionar de forma aleatoria una carta cada vez que se realiza un clic.
+**filterBySuit (filterByType):** This function performs filtering to identify and display the different card categories or types available.
 
-**filterByType (ordenaPorCategoría):** Esta función busca las cartas según su categorización, ya sea como arcanos mayores o menores.
+## 7. Who are the Users?
 
-**filterBysuit (filtrarPorTipo):** Esta función realiza un proceso de filtrado para identificar y mostrar las distintas categorías o tipos de cartas disponibles.
+This project is aimed at tarot enthusiasts.
 
-## 7. ¿Quiénes son los usuarios?
+## 8. Objectives Related to the Product
 
-Esto proyecto esta dirigido a los amantes del Tarot.
+The primary purpose of this product is to allow users to interactively explore all the tarot cards, discover how many there are in total, and understand the meaning of each of them. It also provides users with the ability to examine the most relevant characteristics of each arcana and access detailed information about their different categories.
 
+## 9. Technologies Used
 
-## 8. ¿Objetivos en relación con el producto?
+-   **JavaScript:** Executes functionality for the web and thus displays the obtained results.
+-   **HTML5:** Facilitates the structure of our application.
+-   **CSS3** (**@mediaquery**): Determines the style, design of our application, and responsive design.
+-   **GitHub**, **Git**, **NodeJs**, **Jest**.
 
- El principal propósito de este producto es permitir a los usuarios explorar de forma interactiva todas las cartas del tarot, descubriendo cuántas hay en total y comprendiendo el significado de cada una de ellas. También les brinda la capacidad de examinar las características más relevantes de cada arcano y acceder a información detallada sobre sus diferentes categorías.
-
-
-## 9. Tecnologías utilizadas
-
-**JavaScript**: ejecuta la funcionalidad para la web y de está manera mostrar los resultados obtenidos.
-**html5**: facilita la estructura de nuestra aplicación.
-**css3** (**@mediaquery**): determina estilo, diseño de nuestra aplicación y diseño responsive.
-**GitHub**, **Git**, **NodeJs**, **Jest**.
-
-## 10. Test
+## 10. Testing
 
 - npm run pretest
 
@@ -181,24 +169,22 @@ Esto proyecto esta dirigido a los amantes del Tarot.
 
 <a href="https://ibb.co/Jnz93R4"><img src="https://i.ibb.co/tBb9LMt/data-js-coverage-report.jpg" alt="data-js-coverage-report" border="0"></a>
 
-## 11. Problemas de test
+## 11. Testing Issues
 
-**Problemas en el HTML:**
+**HTML Issues:**
 
-1.  Se encontró un div adicional en el código HTML que no era necesario, lo que podría causar problemas de diseño o estructura en la página web.
-    
-2.  El encabezado (header) no estaba correctamente cerrado, lo que podría causar errores de formato en la página web.
-    
-3.  En el footer, al usar "&" directamente, se producía un error, y la solución fue utilizar "&amp;" para evitar problemas de codificación HTML.
-    
+1. An additional div was found in the HTML code that was not necessary, which could cause layout or structure problems on the web page.
 
-**Problemas con los tests de funcionalidad:**
+2. The header was not properly closed, which could lead to formatting errors on the web page.
 
-1.  En el test de la función "filtrarPorTipo", inicialmente se esperaba que la función devolviera "1 elemento" y, en su lugar, se cambió para que devolviera la propiedad ".length" de la lista de elementos, lo que resolvió el problema.
-    
-2.  En el test de la función "obtenerCartaAleatoria", inicialmente retornaba "undefined". La solución fue modificar el valor esperado en los paréntesis del test para que estuviera vacío, lo que resolvió el problema.
-    
-3.  Hubo un problema donde la función no estaba siendo importada correctamente, lo que resultaba en que la función no hiciera nada. Después de verificar y corregir la importación, la función empezó a funcionar como se esperaba.
-    
+3. In the footer, using "&" directly caused an error, and the solution was to use "&amp;" to avoid HTML encoding issues.
 
-Estos cambios y correcciones fueron esenciales para asegurar que la página web y las funciones cumplan con sus objetivos y funcionen correctamente.
+**Functionality Testing Issues:**
+
+1. In the "filterByType" function test, it initially expected the function to return "1 item," but it was changed to return the ".length" property of the list of items, which resolved the issue.
+
+2. In the "getRandomCard" function test, it initially returned "undefined." The solution was to modify the expected value in the test parentheses to be empty, which resolved the problem.
+
+3. There was an issue where the function was not being imported correctly, resulting in the function not doing anything. After checking and correcting the import, the function started working as expected.
+
+These changes and corrections were essential to ensure that the web page and functions meet their objectives and work correctly.
