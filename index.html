@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data Lovers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class=" searchDiv">
+        <input type="text" id="searchInput" size="40" name="search" placeholder="Search by a card" class="src"
+          autocomplete="off">
+      </div>
+      <div class="w3-center w3-padding-16 filterOptions">
+        <button id="btnAllCards">All Cards</button>
+      </div>
+
+      <div class="w3-center w3-padding-16 filterOptions">
+        <select name="Nombre de arcanos" id="selectArcanos">
+          <option>Select an arcana</option>
+          <option value="major">Major</option>
+          <option value="minor">Minor</option>
+        </select>
+      </div>
+      <div class="w3-center w3-padding-16 filterOptions">
+        <select name="Tipos de cartas" id="selectTipos">
+          <option>Select a type</option>
+          <option value="pentacles">Pentacles</option>
+          <option value="wands">Wands</option>
+          <option value="cups">Cups</option>
+          <option value="swords">Swords</option>
+        </select>
+      </div>
+      <div class="w3-center w3-padding-16 filterOptions">
+        <button id="btnRandomCard">Random card</button>
+      </div>
+    </div>
+  </div>
+  <h1>Welcome to Mystic Tarot</h1>
+  <p id="totalCards"></p>
+
+  <div class="w3-main w3-content" style="max-width:1200px;margin-top:100px">
+
+    <div id="cards" class="w3-row-padding w3-padding-16 w3-center">
+    </div>
+
+    <p id="showErrors"></p>
+    <section id="information">
+      <img src="mano2.jpg" class="forma">
+      <p>Tarot is a set of cards used for divination and spiritual reflection. Each tarot card has unique symbolism and
+        is believed to reveal information about a person's past, present, and future, as well as provide guidance and
+        insights into their life.
+
+        A tarot deck typically consists of 78 cards, divided into two main groups: the Major Arcana and the Minor
+        Arcana. The Major Arcana comprises 22 cards that represent universal archetypes and concepts, such as The Fool,
+        The Magician, The Empress, and so on. The Minor Arcana consists of 56 cards divided into four suits, similar to
+        a traditional playing card deck, and each suit represents a specific facet of life, such as love, work,
+        emotions, and challenges.
+      </p>
+    </section>
+    <div id="myModal" class="modal">
+
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="cardMeaning"></p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-row-padding">
+
+      <p>Copyright &copy; 2023 Laboratoria. Dariana Piñeiro &amp; Regina Esquivel</p>
+
+    </footer>
+  </div>
+  <script src="main.js" type="module"></script>
+
+</body>
+
+</html>
