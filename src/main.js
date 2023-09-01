@@ -13,16 +13,16 @@ let tipo;
 const selectArcanos = document.getElementById("selectArcanos");
 selectArcanos.addEventListener("change", (e) => { // e= es el option al que elegi en el menu de opciones.
   arcano = e.target.value;// se le agrega el e.target.value, donde value trae el valor de option que es minor o major.
-  const arcanoSelected = filterByType(tarot.cards, arcano); //aqui filtramos por tipo de carcano// filter me regresa un array nuevo. 
+  const arcanoSelected = filterByType(tarot.cards, arcano); //aqui filtramos por tipo de arcano// filter me regresa un array nuevo. 
   showCards(arcanoSelected); //mediante la funcion showcards, mandamos llamar nuestra constante arcanoSelected.
 });
 
 // funcionalidad cuando el selector de tipos cambie
-const selectTipos = document.getElementById("selectTipos");
-selectTipos.addEventListener("change", (e) => {
-  tipo = e.target.value;
-  const tiposSelected = filterBySuit(tarot.cards, tipo)
-  showCards(tiposSelected);
+const selectTipos = document.getElementById("selectTipos");//se almacena la varibale selectTipos, es un elemento de lista del menu desplegable
+selectTipos.addEventListener("change", (e) => {//el evento que se esta escuchando aqui es cuando el usuario selecciona una opcion diferente al elemento select(el evento change ejecuta una funcion anonima que se pasa como segundo argumento a ael)
+  tipo = e.target.value;//aqui se obtiene el valor seleecionado en el elemento select, esto almacena la variable tipo
+  const tiposSelected = filterBySuit(tarot.cards, tipo)//aqui se filtran el conjunto de cartas segun el tipo selecionado.devuelve un conjunto de cartas que conincidan con el tipo seleccionado y las almacena en la variable tiposSelect
+  showCards(tiposSelected);// en esta funcion se pasa TS como argumento y esto se encarga de mostrar las cartas selecionadas.
 });
 
 // Aqui se manda llamar todas las cartas con el evento listener cuando se hace click. Se llama showcards y se le pasa todo lo que trae
@@ -31,26 +31,26 @@ const btnAllCards = document.getElementById("btnAllCards");
 btnAllCards.addEventListener("click", () => {
   showCards(tarot.cards); //tarot es el objeto declarado en el archivo tarot.json y cards es la llave que nos regresa el array.
 })
-function removeChildren(component) {
-  while (component.firstChild) {
-    component.removeChild(component.firstChild);
-  }
+function removeChildren(component) {//esta funcion toma el argumento component
+  while (component.firstChild) {//el bucle while se ejecutara mientras el elemento component tenga al menos un hijo.
+    component.removeChild(component.firstChild); //dentro del bucle se utiliza removechild para eliminar el primer hijo del elemento componet
+  }//esto hace se hace repetidamente hasta que ya no queden hijos en component
 }
 function showCards(cards) { //showcards recibe un array de cartas 
   removeChildren(principalDiv); //removeChildren sirve para que una vez que se carguen mis cartas no se vuelvan a duplicar si le doy click al boton de nuevo. 
   document.getElementById("information").style.display = "none";//display = "none" oculta mi pantalla emergente
   const totalCards = cards.length;
   // for que muestra las cartas del tarot en la pantalla
-  for (let i = 0; i < cards.length; i++) {
-    const cardDetails = document.createElement("div");
-    cardDetails.classList.add("cardDetails")
-    const cardTitle = document.createElement("h4");
+  for (let i = 0; i < cards.length; i++) {//se inicia con el bucle for que reconoce todas las cartas del arreglo cards
+    const cardDetails = document.createElement("div");//se crea un elemento div para mostrar los detalles de la carta
+    cardDetails.classList.add("cardDetails")//se agrega una clase css carddetails al elemento div.
+    const cardTitle = document.createElement("h4");//se crea un elemento h4 para mostrar el nombre de la carta y se establece su contenido con el nombre de la carta actual
     cardTitle.innerHTML = cards[i].name;
-    cardDetails.appendChild(cardTitle);
-    const containerCarta = document.createElement("div");
+    cardDetails.appendChild(cardTitle);//se añade el elemnto cardtitle como hijo del elemento carddetails
+    const containerCarta = document.createElement("div");//se crean dos elementos div adicionales llamados container carta y containerbuttons.
     const containerButtons = document.createElement("div");
-    containerButtons.classList.add("containerButtons");
-    const img = document.createElement("img");
+    containerButtons.classList.add("containerButtons");//se agrega una clase a containerbuttons al elemento div
+    const img = document.createElement("img");//crea un nuevo elemento img y lo almacena en la variable img. se usa para mostrar la imagen de la carta.
 
     const buttonLeft = document.createElement("button"); // en esta funcion tengo mi boton
     buttonLeft.setAttribute("name", cards[i].name_short); //le agrego iteracion 
