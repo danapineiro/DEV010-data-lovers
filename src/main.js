@@ -37,9 +37,9 @@ function removeChildren(component) {//esta funcion toma el argumento component
   }//esto hace se hace repetidamente hasta que ya no queden hijos en component
 }
 function showCards(cards) { //showcards recibe un array de cartas 
-  removeChildren(principalDiv); //se llama para eliminar todos los elementos secundarios del elemento con id principal div
-  document.getElementById("information").style.display = "none";//se oculta un elemento con id information estableciendo su estilo visula en none.
-  const totalCards = cards.length;//se obtiene la longitud del arreglo cards y se almacena en la variable total cards.
+  removeChildren(principalDiv); //removeChildren sirve para que una vez que se carguen mis cartas no se vuelvan a duplicar si le doy click al boton de nuevo. 
+  document.getElementById("information").style.display = "none";//display = "none" oculta mi pantalla emergente
+  const totalCards = cards.length;
   // for que muestra las cartas del tarot en la pantalla
   for (let i = 0; i < cards.length; i++) {//se inicia con el bucle for que reconoce todas las cartas del arreglo cards
     const cardDetails = document.createElement("div");//se crea un elemento div para mostrar los detalles de la carta
@@ -122,8 +122,6 @@ span.onclick = function () {
 function getRandomCard() {
   const randomIndex = randomCard(tarot.cards)
   return tarot.cards[randomIndex]; 
-
-
 }//math random genera un numero aleatorio del 0 y 1, math random por tarotcards.length te ada un numero decimal aleatorio entre 0 y la longitud de la lisya de cartas menos 1
 //math.floor redondea ese numero decimal hacia abajo para obtener el indice de la lista de cartas
 //tarot.cards randomIndex selecciona la carta al indice aleatorio y la devuelve
