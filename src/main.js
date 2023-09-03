@@ -107,7 +107,7 @@ const searchInput = document.getElementById("searchInput");
 
 const showErrors = document.getElementById("showErrors");
 searchInput.addEventListener("keyup", (e) => {
-  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value.trim()));
+  const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value.toLowerCase().trim()));
   if (searchResults.length === 0) {
     showErrors.innerHTML;
   }
