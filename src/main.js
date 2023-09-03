@@ -62,61 +62,68 @@ function showCards(cards) { //showcards recibe un array de cartas
       cardMeaning.innerHTML = card.meaning_rev;
       modal.style.display = "block"; //esta es mi pantalla emergente donde imprimo mi informacion de mi carta
     });
-    const buttonRight = document.createElement("button");
-    buttonRight.setAttribute("name", cards[i].name_short);
-    buttonRight.classList.add("btnRight");
-    buttonRight.innerText = "Up Right";
-    buttonRight.addEventListener("click", (e) => {
-      const cardMeaning = document.getElementById("cardMeaning");
-      const card = tarot.cards.find((obj) => obj.name_short === e.target.name);
-      cardMeaning.innerHTML = card.meaning_up;
-      modal.style.display = "block";
+    const buttonRight = document.createElement("button");//se crea un nuevo bton y se alamacena en la variable BR
+    buttonRight.setAttribute("name", cards[i].name_short);//se establece un atributo name en el boton y el valor de ese atributo se toma de la propieda name_short del objeto del array cards en la posicion i
+    buttonRight.classList.add("btnRight");//se agrega class css a ese boton (permite colocar estilos especificos)
+    buttonRight.innerText = "Up Right";//texto interno del boton y así se mostrará
+    buttonRight.addEventListener("click", (e) => {//se agrega evento clic al boton.al dar clic se ejecuta dentro de la funcion
+      const cardMeaning = document.getElementById("cardMeaning");//encuentra un elemento en el dom con id CM y lo guarda en la variable cardmeaning
+      const card = tarot.cards.find((obj) => obj.name_short === e.target.name);//busca un obj en el arrglo de tarot card donde la propieda nameshort coincida con valor del atributo name del boton clickeado
+      cardMeaning.innerHTML = card.meaning_up; //actualiza el contenido del elemento cardmeaning con el significado de la carta encontrada
+      modal.style.display = "block";//cambia el estilo visual del modal para que se pueda ver
     });
 
-    img.classList.add("imgClass");
+    img.classList.add("imgClass");//agrega clase a imgclass en un elemento de img
 
-    img.src = cards[i].img;
-    img.style.width = "100%"
+    img.src = cards[i].img;//establece la fuente de la img src con la url de la img que se encuentra en la propiedad img del objeto
+    //cards[i] esto carga la imagen el elemento img
+    img.style.width = "100%"//establece el ancho de la img al 100 de su contenedor. ocupara todo el ancho disponible
 
-    containerCarta.classList.add("card");
-    containerCarta.classList.add("w3-quarter");
-    containerCarta.setAttribute("name", cards[i].name)
-
+    containerCarta.classList.add("card");//agrega la clase card al elemento
+    containerCarta.classList.add("w3-quarter");//agrega la clase al elemento containercarta(controla el diseño de cuadricula de este contenedor)
+    containerCarta.setAttribute("name", cards[i].name)//establece un atributo name en el elemento CC con el valor del nombre de la carta desde el obj
+    //cards[i].name identificamos la card luego en el codigo
     containerButtons.appendChild(buttonLeft);
     containerButtons.appendChild(buttonRight);
-
-    containerCarta.appendChild(img);
-    containerCarta.appendChild(cardDetails);
-    containerCarta.appendChild(containerButtons);
-
-    principalDiv.id = "principalDiv";
+    //agrega elementos btnl y btnr como hijos del elemento container buttons para insertar botones al contenedor
+    containerCarta.appendChild(img);//agrega img
+    containerCarta.appendChild(cardDetails);//detalles de la carta
+    containerCarta.appendChild(containerButtons);//botones
+    //construye la estructura de cada carta dentro de su contenedor
+    principalDiv.id = "principalDiv";//establece un atriburo id del elemento principal div y agrega clases de css a este elemento para definir estilo y disposicion
     principalDiv.classList.add("w3-row-padding", "w3-padding-16", "w3-center")
-    principalDiv.appendChild(containerCarta);
+    principalDiv.appendChild(containerCarta);//esto ensambla la estructura en cada carta en el principal div
   }
   // append que manda todas las cartas al html
   document.getElementById("cards").appendChild(principalDiv);
-
-  let cardsOrCard = "card";
+  //busca el elemento con el id cards como su hijo y esto muestra lasc artas en la pag
+  let cardsOrCard = "card";//determina si se debe utilizar la palabrar card o cards en la etiqueta de total dependiendo si hay una o varias cartas
   if (totalCards > 1) {
     cardsOrCard = "cards";
   }
   document.getElementById("totalCards").innerHTML = `Total: ${totalCards} ${cardsOrCard}`;
-}
+}//actualiza el contenido del elemento TC para mostrar la cantidad total de cartas y la palabra card o cards segun lo dicho anteriormente
 
 const searchInput = document.getElementById("searchInput");
-
-const showErrors = document.getElementById("showErrors");
-searchInput.addEventListener("keyup", (e) => {
+//obtiene el elemento de entrada de busqueda por su id y lo almacena en la variable SI
+const showErrors = document.getElementById("showErrors");//obtiene el elemento con el id SE y lo alamcena en la variable SE
+searchInput.addEventListener("keyup", (e) => {//agrega un evento de esccuha al elemento de entrada de busqueda que se active cada vez que suelte la tecla (e.keyup)
+  //esto ejecuta cuando el usurio escribe en la barra
   const searchResults = tarot.cards.filter((obj) => obj.name.toLowerCase().startsWith(e.target.value.toLowerCase().trim()));
+  //filtra las cartas en la base de datos tarotcards segun lo ingresado en la barra de busqueda
+  //con el tolowercase convierte el nombre de la carta en minusculas y elemina los espacios con el .trim al prin y al final.
+  //esto crea un arreglo que contiene las cartas que coinciden con las busqueda
   if (searchResults.length === 0) {
     showErrors.innerHTML;
-  }
+  }//si no se encuentran resultados se debe mostrar un msj de error
   showCards(searchResults);
 })
 
 span.onclick = function () {
   modal.style.display = "none";
-}
+}//asocia una funcion a la prop onclick del elemento span.
+//al ahcer clic en este elemento la funcion de ejecutará y establecera el estilo de modal en none
+//con esto ocultara el modal en la web.
 
 //esta funcion se encarga de seleccionar una carta aleatoria del grupo de cartas que estan Tarot.cards
 function getRandomCard() {
