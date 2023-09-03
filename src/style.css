@@ -1,69 +1,68 @@
 html {
-    box-sizing: border-box
+    box-sizing: border-box /*modelo de caja para todos los elementos*/
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: inherit;/*el tamaño total de elemento incluye contenid, relleno y borde pero no margenes*/
 }
 
 html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;/*tamaño de texto en navergadores especificos*/
+    -webkit-text-size-adjust: 100%/*para garantizar legibilidad*/
 }
 
 body {
     margin: 0;
-    background-image: url(tarot3.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Karma", sans-serif
+    background-image: url(tarot3.jpg);/*img de fondo*/
+    background-attachment: fixed; /*la imag de fondo permanerá fija mientras el usuario se desplaza*/
+    background-position: center;/*posicion centrada*/
+    background-repeat: no-repeat;/*sin repetir la img*/
+    background-size: cover;/*que cubra toda el elemento*/
+    font-family: "Karma", sans-serif/*define el tipo de letra y una fuente de respaldo*/
 }
 
 section {
-    display: block
-}
+    display: block/*los elementos de esta seccion se mostraran en bloques*/
+}/*info*/
 
 .imgClass {
-    border-radius: 15px;
-    max-height: 350px;
-    width: auto;
+    border-radius: 15px;/*borde redondeado de las imagenes*/
+    max-height: 350px; /*altura max de las imagenes*/
+    width: auto;/*el ancho de las imagenes se ajusta automaticamente*/
 }
 
 .filterOptions {
-    display: inline-block;
+    display: inline-block;/*muestra en linea los elementos que estan en filteroptions*/
 }
 
 .forma {
-    shape-image-threshold: 0.5;
-    shape-margin: 40px;
-    float: left;
-    border-color: #C07F00;
-    border-radius: 4%;
-    margin-right: 2%;
-    width: 15%;
-    height: 13%;
-    margin-left: 1%;
-
+    shape-image-threshold: 0.5;/*establece un umbral de imagen*/
+    shape-margin: 40px;/*establece un margen alrededor*/
+    float: left;/*hace que el elemento flote a la izquierda*/
+    /*border-color: #C07F00;*/
+    border-radius: 4%;/*borde redondeado*/
+    margin-right: 2%;/*margen derecho*/
+    width: 15%;/*ancho*/
+    height: 13%;/*alto*/
+    margin-left: 1%;/*margen izquieso*/
 }
 
 #information {
-    justify-content: center;
+    justify-content: center;/*centra el contenido horizontalmente*/
     background-color: #ddbcf2;
-    background-position: center;
-    font-size: 110%;
-    color: #51096C;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 6em;
-    border-radius: 4px;
-    border-color: #710da7;
-    border-style: solid;
+    background-position: center;/*centra la img de fondo*/
+    font-size: 110%;/*tamaño de la fuente al 110% del tamaño predeterminado*/
+    color: #51096C;/*color de texto*/
+    text-align: center;/*texto alineado al centro*horizontalmente*/
+    align-items: center;/*centra el contenido verticalmente*/
+    display: flex;/*diseño de caja flexible*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*fuente*/
+    margin-bottom: 6em;/*margen inferior en unidades de medida*/
+    border-radius: 4px;/*borde redondeado*/
+    border-color: #710da7;/*color de borde*/
+    border-style: solid;/*borde solido*/
 }
 
 #totalCards {
@@ -71,53 +70,53 @@ section {
     background-color: #ddbcf2;
     text-align: center;
     color: #710da7;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 45%;/*margen izquierdo*/
+    margin-right: 45%;/*margen derecho*/
     border-radius: 4px;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
+    display: none;/*permite que el elemento permanezca oculto*/
+    position: fixed;/*posicion de elemento como fijo no se desplaza con la pagina*/
+    z-index: 1;/*se utiliza para ponerse encima de los elementos*/
+    left: 0;/*la posicion del elemento en la parte superior izquierda de la ventana*/
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
+    overflow: auto;/*habilita el desplazamiento cuando el contenido excede el tamaño del elemento*/
+    background-color: rgb(0, 0, 0);/*color de fondo a negro con opacidad del 40%*/
     background-color: rgba(0, 0, 0, 0.4);
 
 }
 
 .modal-content {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 15% auto;
-    padding: 20px;
+    margin: 15% auto;/*margen superior e inferior y centrado horizontalmente*/
+    padding: 20px;/*agrega espacio interno al rededor del contenido*/
     border-radius: 4px;
-    border: 2px solid #710da7;
-    width: 30%;
+    border: 2px solid #710da7;/*borde de dos px de ancho con color*/
+    width: 30%;/*ancho del elemento dentro del ancho del contenedor*/
     text-align: center;
     background-color: #ddbcf2;
-    color: #000000;
+    color: #000000;/*color de texto*/
 }
 
 .card {
-    position: relative;
+    position: relative;/*se utiliza para controlar como se posiciona un elemento en relacion con su posicion normal en la pagina*/
 }
 
 .card:hover {
-    cursor: pointer;
+    cursor: pointer;/*cmabia el cursor a una manito*/
     background: linear-gradient(to bottom, #710da7, #ddbcf2);
-}
+}/*aplica fondo degradado en hover*/
 
 .card:hover div.cardDetails {
-    opacity: 1;
+    opacity: 1;/*establece opacidad a 1 cuando puntero esta sobre la carta*/
     color: #ffffff;
 }
 
 .card:hover img {
-    opacity: .5;
+    opacity: .5;/*reduce la opacidad de las imagenes cuando el puntero esta sobre los elementos card*/
 }
 
 #searchInput {
@@ -195,7 +194,7 @@ section {
     border-style: solid;
 }
 
-.close {
+.close {/*estilo de la x que cierra el modal*/
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -275,24 +274,24 @@ section {
 }
 
 .cardDetails {
-    left: 50%;
-    right: 50%;
-    opacity: 0;
+    left: 50%;/*centra los detalles de las cartas horizontalmente*/
+    right: 50%;/*x2*/
+    opacity: 0;/*establece inicialmente opacidad 0 */
     height: 100px;
-    position: absolute;
+    position: absolute;/*permite posicionamiento absoluto al contenerdor de cartas*/
     text-align: center;
-    top: 65%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    transition: .5s ease-in-out;
+    top: 65%;/*centra verticalmente*/
+    -webkit-transform: translate(-50%, -50%);/*mueve el elemento hacia la iz en un 50% d su propio ancho*/
+    transform: translate(-50%, -50%);/*y hacia arriba en un 50% de su propia altura para centrarlo completamente*/
+    transition: .5s ease-in-out;/*aplica una transicion suave de 0.5 segundos para cmabios en propiedas animadas*/
     width: 100%;
 }
 
 footer {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0;
+    margin-left: auto;/*centra el footer horizontalmente en su contenedor*/
+    margin-right: auto;/*x2*/
+    bottom: 0; /*fija el footer en la parte inferior del contenedor*/
     width: 100%;
     border-radius: 4px;
     background-color: #ddbcf2;
@@ -308,11 +307,11 @@ html,
 body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5/*espacio entre lineas*/
 }
 
 html {
-    overflow-x: hidden
+    overflow-x: hidden/*oculta la barra de desplazamiento incluso si el contenido es mas ancho*/
 }
 
 h1 {
@@ -325,11 +324,11 @@ h1 {
 
 .w3-main,
 #main {
-    transition: margin-left .4s
-}
+    transition: margin-left .4s/*aplica una transicion suave a los elementos de esta clase*/
+}/*al abrir o cerrar un menu esto se animará durante 0.4 segundos para crear efecto visual*/
 
-.w3-center .w3-bar {
-    display: inline-block;
+.w3-center .w3-bar {/*estos elementos se alinean en bloque y su ancho automatico*/
+    display: inline-block;/*ayuda a ocupar el espacio necesario*/
     width: auto
 }
 
@@ -346,23 +345,24 @@ h1 {
 .w3-clear:after,
 .w3-clear:before,
 .w3-bar:before,
-.w3-bar:after {
+.w3-bar:after {/*estas reglas aplican clearfix que se utiliza para evitar que los elementos floten alrededor de otros elementos flotantes en el diseño*/
     content: "";
     display: table;
     clear: both
-}
-
+}/*lo que podria traer problemas de diseño, before y after son pseudo elementos*/
+/* para insertar elementos invisibles que fuerzan la limpieza de los elementos anteriores y posteriores*/
 .w3-col,
 .w3-half,
 .w3-third,
 .w3-twothird,
 .w3-threequarter,
-.w3-quarter {
-    float: left;
-    width: 100%
+.w3-quarter {/*se utilizan para definir el anco de los elementos en un diseño de columnas o cuadricula*/
+    float: left;/*establece que los elementos floten a la iz*/
+    width: 100%/*establece que los elementos ocupen todo el ancho disponible en su contenedor*/
 }
 
-@media (min-width:601px) {
+/*diseño responsivo utilizando media queries*/
+@media (min-width:601px) {/*aqui se define el media query que se activa con el ancho de la ventana del navegador es igual o mayor a 601px*/
     .w3-col.m1 {
         width: 8.33333%
     }
@@ -418,7 +418,7 @@ h1 {
     }
 }
 
-@media (min-width:993px) {
+@media (min-width:993px) {/*aqui se activa cuando la ventana del navegador es igual o maryor a 993px*/
     .w3-col.l1 {
         width: 8.33333%
     }
@@ -469,48 +469,48 @@ h1 {
 }
 
 .w3-content,
-.w3-auto {
+.w3-auto {/*estas reglas aplican un margen iz y de automaticos*/
     margin-left: auto;
     margin-right: auto
 }
 
-.w3-content {
+.w3-content {/*establece un ancho max de 980 px para los elementos de esta class*/
     max-width: 980px
 }
 
-@media (max-width:1205px) {
+@media (max-width:1205px) {/*esto define una segunda media query que se activa cuando el ancho de la ventana del navegador es igual o menor a 1205px*/
     .w3-auto {
-        max-width: 95%
+        max-width: 95%/*aqui se ajusta el ancho max cuando la ventana es igual o menor a 1205px*/
     }
 }
 
-@media (max-width:600px) {
-    .w3-modal-content {
+@media (max-width:600px) {/*estilo especifico para pantallas con un ancho max de 600px*/
+    .w3-modal-content {/*ajusta margen iz y de y permite ancho auto*/
         margin: 0 10px;
-        width: auto !important
+        width: auto !important/*asegura que el contenido modal se ajuste correctamente en pantallas pequeñas*/
     }
 
-    .w3-modal {
-        padding-top: 30px
+    .w3-modal {/*asegura un relleno superior de 30px*/
+        padding-top: 30px/*para dar espacio adicional en la parte superior del modal en pantallas pequeñas*/
     }
 
     .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
-    .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+    .w3-dropdown-click.w3-mobile .w3-dropdown-content {/*ajusta la posicion de los menus desplegables para que se muestren de manera más adecuada en p.p*/
         position: relative
     }
 
-    .w3-hide-small {
+    .w3-hide-small {/*oculta elementos con esta clase en pantallas p mediante none !important*/
         display: none !important
     }
 
-    .w3-mobile {
+    .w3-mobile {/*establece que los elementos tengan ancho de 100 y se muestren en bloque en p.p*/
         display: block;
         width: 100% !important
     }
 
     .w3-bar-item.w3-mobile,
     .w3-dropdown-hover.w3-mobile,
-    .w3-dropdown-click.w3-mobile {
+    .w3-dropdown-click.w3-mobile {/*centra el contenido de pp mediante T.A*/
         text-align: center
     }
 
@@ -519,92 +519,92 @@ h1 {
     .w3-dropdown-hover.w3-mobile .w3-button,
     .w3-dropdown-click.w3-mobile,
     .w3-dropdown-click.w3-mobile .w3-btn,
-    .w3-dropdown-click.w3-mobile .w3-button {
+    .w3-dropdown-click.w3-mobile .w3-button {/*estable que los botones dentro de menus desplegables ocupen el ancho completo en p.p*/
         width: 100%
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:768px) {/*aplica cuando el ancho es igual o menor a 798px y pp o moviles*/
     .imgClass {
-        height: 300px;
+        height: 300px;/*reduce la altura max de los elementos de esta class*/
     }
 
     #cards {
-        margin: 0;
+        margin: 0;/*elimina los margenes con el if card*/
     }
 
-    .filterOptions {
+    .filterOptions {/*se muestran los elementos en bloque en lugar de en linea*/
         display: block;
     }
 
-    .searchDiv {
+    .searchDiv {/*x2*/
         display: block;
     }
 
-    #totalCards {
+    #totalCards {/*elimina los margenes*/
         margin: 0;
 
     }
 
-    h1 {
+    h1 {/*añade un margen superior*/
         margin-top: 12em;
     }
 }
 
-@media (min-width:993px) {
-    .w3-modal-content {
+@media (min-width:993px) {/*igual o menor que 993 pantallas grandes*/
+    .w3-modal-content {/*establece un ancho fijo de 900px para elementos de esta clase*/
         width: 900px
     }
 
-    .searchDiv {
+    .searchDiv {/*cambia la propiedad para que los elementos de esta clase se muestren en linea*/
         display: inline-block;
     }
 
-    .w3-hide-large {
+    .w3-hide-large {/*oculta elementos con esta clase en pantallas grandes mediante none !important*/
         display: none !important
     }
 
-    .w3-sidebar.w3-collapse {
+    .w3-sidebar.w3-collapse {/*hace que los elementos de esta clase se muestren en bloques en pantallas grandes*/
         display: block !important
     }
 }
 
-@media (max-width:992px) and (min-width:601px) {
-    .w3-hide-medium {
+@media (max-width:992px) and (min-width:601px) {/*aplican cuando el ancho de la ventana del navegador esta entre 601 y 992px*/
+    .w3-hide-medium {/*oculta elementos de esta clase en ese rango de tamaño mediante none!important*/
         display: none !important
     }
 }
 
-@media (max-width:992px) {
-    .w3-sidebar.w3-collapse {
+@media (max-width:992px) {/*aplica en el ancho de pantallas igual o menor a 992px*/
+    .w3-sidebar.w3-collapse {/*oculta elementos de esta class*/
         display: none
     }
 
-    .w3-main {
-        margin-left: 0 !important;
-        margin-right: 0 !important
-    }
+    .w3-main {/*establece propiedades para los elementos de esta clase*/
+        margin-left: 0 !important;/*elimina cualquier margen izquierdo que pudiera tener el elemento con la clase*/
+        margin-right: 0 !important/*elimina cualquier margen derecho*/
+    }/*!important indica que esta regla tiene prioridad sobre otras reglas de estilo*/
 
-    .w3-auto {
+    .w3-auto {/*esto hace que los elementos tengan un ancho max de 100% del contenedor pricipal*/
         max-width: 100%
     }
 }
 
 .w3-top,
-.w3-bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1
+.w3-bottom {/*define estilos de elementos de la parte superior*/
+    position: fixed;/*posicion fija de los elementos*/
+    width: 100%;/*acho max lo que significa que ocupara todo el ancho disponible*/
+    z-index: 1/*se superpone encima de otros elementos*/
 }
 
-.w3-top {
+.w3-top {/*img del fondo top*/
     background-image: url(tarot3.jpg);
     top: 0
 }
 
-.w3-row-padding,
-.w3-row-padding>.w3-half,
-.w3-row-padding>.w3-third,
+.w3-row-padding,/*espacio de relleno en los lados iz y de*/
+.w3-row-padding>.w3-half,/*elimina espacio adicional entre los elementos en filas*/
+.w3-row-padding>.w3-third,/*establece el mismo relleno 0 en los lados iz y de para elements especificos*/
 .w3-row-padding>.w3-twothird,
 .w3-row-padding>.w3-threequarter,
 .w3-row-padding>.w3-quarter,
@@ -612,19 +612,19 @@ h1 {
     padding: 0 8px
 }
 
-.w3-xlarge {
-    font-size: 24px !important
+.w3-xlarge {/*establece el tamaño de fuente*/
+    font-size: 24px !important/*las propiedad important le da prioridad a esta regla*/
 }
 
-.w3-center {
-    text-align: center !important
+.w3-center {/*define el texto de manera centralizada*/
+    text-align: center !important/*se le da prioridad a esta regla*/
 }
 
-.w3-padding-16 {
+.w3-padding-16 {/*margen izquierdo, relleno superior y relleno inferior*/
     margin-left: 50px;
     padding-top: 16px !important;
     padding-bottom: 16px !important
-}
+}/*con propiedad important para darle prioridad a estas reglas*/
 
 body {
     font-family: "Karma", sans-serif
